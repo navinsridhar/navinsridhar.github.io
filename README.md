@@ -41,7 +41,7 @@ auto-synced from Overleaf nightly via GitHub Actions.
 ### 1. Fork al-folio and overlay these files
 
 al-folio is a complete Jekyll theme. The cleanest way to set this up is to
-*start from a fresh clone of al-folio* and then overlay the files in this
+_start from a fresh clone of al-folio_ and then overlay the files in this
 folder.
 
 ```bash
@@ -78,7 +78,7 @@ git push -u origin main
 
 On GitHub: **Settings → Pages → Build and deployment**, set:
 
-- **Source:** *Deploy from a branch*
+- **Source:** _Deploy from a branch_
 - **Branch:** `gh-pages` / `(root)`
 
 The first push to `main` triggers `.github/workflows/deploy.yml`, which builds
@@ -95,8 +95,8 @@ You need to give it credentials:
 
 1. **Get your Overleaf project's git URL.** On Overleaf, open the project →
    **Menu → Sync → Git**. Copy the URL (looks like
-   `https://git.overleaf.com/<project-id>`). *This requires Overleaf
-   Premium/Pro or a sitewide-license institution* — Stanford has one, so you
+   `https://git.overleaf.com/<project-id>`). _This requires Overleaf
+   Premium/Pro or a sitewide-license institution_ — Stanford has one, so you
    should already qualify with your `@stanford.edu` account.
 
 2. **Generate an Overleaf access token.** Overleaf → click your avatar →
@@ -106,18 +106,18 @@ You need to give it credentials:
 3. **Add both as GitHub secrets.** On the GitHub repo:
    **Settings → Secrets and variables → Actions → New repository secret**.
 
-   | Name                 | Value                                      |
-   |----------------------|--------------------------------------------|
+   | Name                 | Value                                                        |
+   | -------------------- | ------------------------------------------------------------ |
    | `OVERLEAF_GIT_URL`   | the URL from step 1, e.g. `https://git.overleaf.com/abc123…` |
-   | `OVERLEAF_GIT_TOKEN` | the token from step 2                      |
+   | `OVERLEAF_GIT_TOKEN` | the token from step 2                                        |
 
 4. **(Optional) tell the workflow what your top-level .tex file is named.**
    The default is `main.tex`. If yours is named e.g. `CV.tex` or
    `Sridhar_CV.tex`, add a **repository variable** (same UI tab, "Variables"
    sub-tab) called `MAIN_TEX_FILE` with the value (e.g. `CV.tex`).
 
-5. **Run it once manually.** Actions tab → *Sync CV from Overleaf* →
-   *Run workflow*. After ~ 2 min you should see `assets/pdf/CV.pdf` updated
+5. **Run it once manually.** Actions tab → _Sync CV from Overleaf_ →
+   _Run workflow_. After ~ 2 min you should see `assets/pdf/CV.pdf` updated
    on `main`.
 
 From then on, every change you push to Overleaf will be reflected on the
@@ -139,16 +139,16 @@ If you change `_config.yml`, restart the server.
 
 ## customisation cheat-sheet
 
-| What you want to change       | Where                                            |
-|-------------------------------|--------------------------------------------------|
-| Bio paragraph on landing page | `_pages/about.md`                                |
-| Profile photo                 | `assets/img/prof_pic.jpg`                        |
-| Site title / colour theme     | `_config.yml` (`title`, `theme_color`)           |
-| Add/remove a navbar tab       | front-matter `nav: true / false` in `_pages/*.md` |
-| Add a publication             | `_bibliography/papers.bib`                       |
-| Mark a paper as "selected"    | add `selected = {true}` to its bib entry         |
-| Front-page news item          | drop a new `_news/announcement_N.md`             |
-| Social links in sidebar       | `_data/socials.yml`                              |
+| What you want to change                 | Where                                                                      |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| Bio paragraph on landing page           | `_pages/about.md`                                                          |
+| Profile photo                           | `assets/img/prof_pic.jpg`                                                  |
+| Site title / colour theme               | `_config.yml` (`title`, `theme_color`)                                     |
+| Add/remove a navbar tab                 | front-matter `nav: true / false` in `_pages/*.md`                          |
+| Add a publication                       | `_bibliography/papers.bib`                                                 |
+| Mark a paper as "selected"              | add `selected = {true}` to its bib entry                                   |
+| Front-page news item                    | drop a new `_news/announcement_N.md`                                       |
+| Social links in sidebar                 | `_data/socials.yml`                                                        |
 | Custom domain (e.g. `navinsridhar.com`) | put it in `cname:` in `deploy.yml` and add a `CNAME` file at the repo root |
 
 ---
