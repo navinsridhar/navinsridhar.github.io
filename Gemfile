@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'eventmachine', '>= 1.2.10'
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
@@ -8,7 +9,6 @@ group :jekyll_plugins do
     gem 'jekyll-get-json'
     gem 'jekyll-imagemagick'
     gem 'jekyll-link-attributes'
-    gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-regex-replace'
     gem 'jekyll-scholar'
@@ -17,7 +17,6 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
 end
@@ -25,4 +24,8 @@ group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
+end
+group :production do
+  gem 'jekyll-minifier'
+  gem 'mini_racer'
 end
