@@ -1,0 +1,114 @@
+# al-folio's CV layout can also auto-render from this YAML.
+# (See https://github.com/alshedivat/al-folio/wiki/CV.)
+# This is a structured fallback in case you prefer the YAML-driven CV view
+# over the markdown one in _pages/cv.md.
+
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Navin Sridhar
+    - name: Email
+      value: nsridhar@stanford.edu
+    - name: Affiliation
+      value: KIPAC & Department of Physics, Stanford University
+    - name: Languages
+      value: English, Tamil, Hindi
+
+- title: Current Position
+  type: time_table
+  contents:
+    - title: Simons Collaboration (SCEECS) Postdoctoral Fellow
+      institution: KIPAC, Stanford University
+      year: 2024 – 2028
+      description:
+        - Supervisor — Dr. Roger Blandford.
+        - Black-hole accretion, magnetic reconnection in coronae, FRBs, multi-messenger transients.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Astrophysics
+      institution: Columbia University, NY
+      year: 2024
+      description:
+        - Advisors — Dr. Lorenzo Sironi, Dr. Brian D. Metzger.
+        - Thesis — "Electromagnetic and Multimessenger Signals From Magnetized Outflows of Compact Object Binaries."
+    - title: M.A. & M.Phil. in Astrophysics
+      institution: Columbia University, NY
+      year: 2020 – 2021
+    - title: BS-MS in Physics (CPI 9.05/10)
+      institution: IISER Bhopal
+      year: 2018
+      description:
+        - "Thesis: Accretion disk evolution around black holes, and thermonuclear bursts in neutron stars (Caltech & TIFR)."
+
+- title: Honours & Awards
+  type: time_table
+  contents:
+    - year: 2026 – 2027
+      items:
+        - PI, NASA NICER grant ($45,000).
+    - year: 2024
+      items:
+        - Neil Gehrels Prize Fellowship — JSI, U. Maryland & NASA.
+        - Brinson Fellowship — Northwestern/CIERA & U. Chicago.
+    - year: 2022 – 2024
+      items:
+        - NASA FINESST award ($100,000).
+        - PI, NASA NICER grant ($37,500).
+    - year: 2021 – 2023
+      items:
+        - AAS National Osterbrock Leadership Fellow ($6,400).
+    - year: 2018 – 2020
+      items:
+        - Dean's fellowship for graduate study, Columbia University.
+        - Yeh Family endowment fellowship, Columbia University (2019–20).
+    - year: 2017
+      items:
+        - Caltech Summer Undergraduate Research Fellowship ($6,600).
+        - Mitacs Globalink Research Internship Award (~CA $6,600).
+    - year: 2013 – 2018
+      items:
+        - INSPIRE fellowship, DST, Government of India (INR 400,000).
+
+- title: Selected Research Visits
+  type: time_table
+  contents:
+    - title: Visiting Researcher
+      institution: KITP, UC Santa Barbara
+      year: Sep 2024
+    - title: Visiting Student Researcher
+      institution: Caltech (host — Dr. Sterl Phinney)
+      year: 2023 – 2024
+    - title: Visiting Researcher
+      institution: CCA, Flatiron Institute (advisors — Dr. Sasha Philippov, Dr. Lorenzo Sironi)
+      year: 2019 – 2023
+    - title: Caltech SURF
+      institution: Caltech (advisors — Dr. Javier García, Prof. Fiona Harrison)
+      year: Jul – Oct 2017
+
+- title: Open Source / Computing
+  type: nested_list
+  contents:
+    - title: Languages & tools
+      items:
+        - Python, git, FORTRAN, IRAF, gnuplot, DS9, LaTeX
+        - HEASoft (XSPEC, QDP, XRONOS)
+    - title: Supercomputers
+      items:
+        - NASA Pleiades; DOE-NERSC Cori
+        - NSERC WestGrid; Flatiron HPC; Columbia Habanero/Terremoto/Ginsburg
+    - title: Numerical methods
+      items:
+        - Particle-in-Cell (PIC) simulations
+        - Magnetohydrodynamic (MHD) simulations
+    - title: Telescope data
+      items:
+        - X-ray — AstroSat, Swift, RXTE/PCA, NuSTAR, NICER, XMM-Newton
+        - Radio — NCRA-GMRT, NRAO-GBT (Astrid, CLEO)
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Astrophotography, science writing, mentoring, hiking.

@@ -1,0 +1,213 @@
+# -----------------------------------------------------------------------------
+# Site settings — al-folio overrides for Navin Sridhar
+# -----------------------------------------------------------------------------
+
+title: navin sridhar
+first_name: Navin
+middle_name:
+last_name: Sridhar
+email: nsridhar@stanford.edu
+description: >
+  High-energy astrophysicist. Simons (SCEECS) Postdoctoral Fellow at KIPAC,
+  Stanford University. I study compact objects, relativistic outflows,
+  black-hole accretion, and fast radio bursts.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
+  <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>.
+keywords: >
+  astrophysics, high-energy astrophysics, compact objects, black holes, neutron stars,
+  fast radio bursts, FRB, accretion, magnetic reconnection, particle acceleration,
+  plasma astrophysics, relativistic outflows, gamma-ray bursts
+lang: en
+icon: 🌠
+
+url: https://navinsridhar.github.io
+baseurl:
+last_updated: false
+
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+
+# Use the light/dark palette al-folio ships with.
+# If you prefer deeper colours, tweak _sass/_variables.scss after forking.
+theme_color: "#b509ac"
+
+# -----------------------------------------------------------------------------
+# RSS feed / GA
+# -----------------------------------------------------------------------------
+
+rss_icon: true
+google_analytics:   # e.g. G-XXXXXXXXXX (set later)
+
+# -----------------------------------------------------------------------------
+# Open Graph / social
+# -----------------------------------------------------------------------------
+
+serve_og_meta: true
+og_image: /assets/img/prof_pic.jpg
+
+# -----------------------------------------------------------------------------
+# Layout settings
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: true
+max_width: 930px
+
+# Dark mode
+enable_darkmode: true
+
+# Scrolling
+enable_progressbar: true
+
+# Enable search
+search_enabled: true
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+blog_name: notes
+blog_description: occasional notes & updates
+permalink: /blog/:year/:title/
+lsi: false
+excerpt_separator: "<!--more-->"
+show_drafts: false
+limit_posts: 0
+pagination:
+  enabled: true
+  per_page: 8
+related_blog_posts:
+  enabled: false
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_scrollable: true
+news_limit: 8
+
+# Display a publication list with al-folio's jekyll-scholar integration.
+scholar:
+  last_name: Sridhar
+  first_name: [Navin, N., N]
+  style: apa
+  locale: en
+  source: /_bibliography
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+  query: "@*"
+
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview]
+max_author_limit: 3
+more_authors_animation_delay: 10
+bib_search: true
+
+# -----------------------------------------------------------------------------
+# Jekyll plugins
+# -----------------------------------------------------------------------------
+
+plugins:
+  - jekyll-archives
+  - jekyll-diagrams
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-imagemagick
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-link-attributes
+  - jekyll-twitter-plugin
+  - jemoji
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+markdown: kramdown
+highlighter: rouge
+include: ["_pages"]
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
+
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+# -----------------------------------------------------------------------------
+# Jekyll Archives (tags / categories for blog)
+# -----------------------------------------------------------------------------
+
+jekyll-archives:
+  enabled: [year, tags, categories]
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: "/blog/:year/"
+    tag: "/blog/tag/:name/"
+    category: "/blog/category/:name/"
+
+display_tags: ["research", "teaching", "outreach", "notes"]
+display_categories: []
+
+# -----------------------------------------------------------------------------
+# Optimization
+# -----------------------------------------------------------------------------
+
+jekyll-minifier:
+  exclude: ["robots.txt"]
+  uglifier_args:
+    harmony: true
+
+jekyll-imagemagick:
+  enabled: false
+
+# -----------------------------------------------------------------------------
+# Enabled/disabled features on profile
+# -----------------------------------------------------------------------------
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: false
+  more_info: >
+    <p>KIPAC, Stanford University</p>
+    <p>452 Lomita Mall</p>
+    <p>Stanford, CA 94305</p>

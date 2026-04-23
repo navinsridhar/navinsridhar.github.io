@@ -1,0 +1,53 @@
+name: Deploy site
+
+# Build the al-folio site with Jekyll on every push to main, and publish it to
+# the gh-pages branch. GitHub Pages should be set to serve from the gh-pages
+# branch (Settings > Pages).
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Install ImageMagick & Node (for al-folio plugins)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          node --version
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --trace
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          cname: ""   # set to your custom domain if you buy one, e.g. navinsridhar.com

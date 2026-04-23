@@ -1,0 +1,102 @@
+name: Sync CV from Overleaf
+
+# Pull the latest CV source from Overleaf, compile the .tex to a PDF, and
+# commit the PDF into this repo so the site auto-serves the newest CV.
+#
+# Requires (set under Settings > Secrets and variables > Actions):
+#   OVERLEAF_GIT_URL   — the git URL of your Overleaf project. Overleaf
+#                        gives you this at the "Git" tab of a project page;
+#                        it looks like https://git.overleaf.com/<project-id>
+#   OVERLEAF_GIT_TOKEN — a git-access token from Overleaf's "Account
+#                        settings > Git integration > Generate token"
+#                        (Overleaf Premium / Pro / sitewide license).
+#   MAIN_TEX_FILE      — (optional repo variable) name of the top-level .tex
+#                        file in the Overleaf project. Defaults to main.tex.
+#                        If your CV's top-level file is named differently
+#                        (e.g. CV.tex, Sridhar_CV.tex), set this as a
+#                        repository *variable* (Settings > Secrets and
+#                        variables > Actions > Variables).
+
+on:
+  schedule:
+    # 08:00 UTC every day (00:00 US Pacific in winter, 01:00 in summer)
+    - cron: "0 8 * * *"
+  workflow_dispatch:     # allow manual runs from the Actions tab
+  push:
+    paths:
+      - ".github/workflows/sync-cv.yml"
+
+permissions:
+  contents: write        # needed to commit the compiled PDF back to the repo
+
+concurrency:
+  group: sync-cv
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the website repo
+        uses: actions/checkout@v4
+        with:
+          # Full history so we can push back a commit cleanly.
+          fetch-depth: 0
+
+      - name: Clone the Overleaf project
+        env:
+          OVERLEAF_GIT_URL:   ${{ secrets.OVERLEAF_GIT_URL }}
+          OVERLEAF_GIT_TOKEN: ${{ secrets.OVERLEAF_GIT_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${OVERLEAF_GIT_URL}" ] || [ -z "${OVERLEAF_GIT_TOKEN}" ]; then
+            echo "::error::OVERLEAF_GIT_URL and OVERLEAF_GIT_TOKEN secrets must be set."
+            exit 1
+          fi
+          # Overleaf git auth format: https://git:<TOKEN>@git.overleaf.com/<id>
+          AUTHED_URL="$(echo "${OVERLEAF_GIT_URL}" \
+            | sed -E "s#https://#https://git:${OVERLEAF_GIT_TOKEN}@#")"
+          rm -rf overleaf-cv
+          git clone --depth 1 "${AUTHED_URL}" overleaf-cv
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-bibtex-extra \
+            texlive-science \
+            biber \
+            latexmk
+
+      - name: Compile the CV
+        env:
+          MAIN_TEX_FILE: ${{ vars.MAIN_TEX_FILE || 'main.tex' }}
+        run: |
+          set -euo pipefail
+          cd overleaf-cv
+          if [ ! -f "${MAIN_TEX_FILE}" ]; then
+            echo "::error::${MAIN_TEX_FILE} not found in Overleaf project. Set the MAIN_TEX_FILE repo variable."
+            ls -la
+            exit 1
+          fi
+          latexmk -pdf -interaction=nonstopmode -halt-on-error "${MAIN_TEX_FILE}"
+          OUT_PDF="${MAIN_TEX_FILE%.tex}.pdf"
+          mkdir -p ../assets/pdf
+          cp "${OUT_PDF}" ../assets/pdf/CV.pdf
+
+      - name: Commit & push the updated PDF (if changed)
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- assets/pdf/CV.pdf; then
+            echo "No change in CV PDF — skipping commit."
+            exit 0
+          fi
+          git add assets/pdf/CV.pdf
+          git commit -m "chore: sync CV from Overleaf ($(date -u +%Y-%m-%d))"
+          git push
