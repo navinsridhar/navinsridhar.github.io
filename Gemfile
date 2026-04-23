@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'eventmachine', '>= 1.2.10'
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
