@@ -82,5 +82,5 @@ nav_order: 5
 
 ---
 
-*Have a journalist question or want to feature the research? Please
-[email me](mailto:nsridhar@stanford.edu).*
+_Have a journalist question or want to feature the research? Please
+[email me](mailto:nsridhar@stanford.edu)._

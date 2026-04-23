@@ -38,7 +38,7 @@ theme_color: "#b509ac"
 # -----------------------------------------------------------------------------
 
 rss_icon: true
-google_analytics:   # e.g. G-XXXXXXXXXX (set later)
+google_analytics: # e.g. G-XXXXXXXXXX (set later)
 
 # -----------------------------------------------------------------------------
 # Open Graph / social

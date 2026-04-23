@@ -1,15 +1,15 @@
 cd /Users/navin/Sites/navinsridhar.github.io
-git pull --rebase origin main
 
-# Rename JPG → jpg via a temporary name (two-step to defeat macOS case-insensitivity)
-git mv assets/img/prof_pic.JPG assets/img/_tmp_prof_pic.jpg
-git mv assets/img/_tmp_prof_pic.jpg assets/img/prof_pic.jpg
+# Check al-folio's package.json is present
+ls package.json
 
-# While we're at it — auto-fix the Prettier formatting warnings
-node --version || brew install node
+# Install the dev dependencies it declares (Prettier + the Liquid plugin)
+npm install
+
+# Now Prettier can find the plugin
 npx prettier . --write
 
-# Commit both fixes together
+# Commit and push
 git add -A
-git commit -m "Fix: lowercase profile-pic extension + Prettier formatting pass"
+git commit -m "Prettier formatting pass"
 git push

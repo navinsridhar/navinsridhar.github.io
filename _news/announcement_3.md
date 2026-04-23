@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**New paper out** — *Bulk Motions in the Black Hole Jet Sheath as a Candidate for the Comptonizing Corona.* ApJ 979, 199 — 📄 [[ADS]](https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S).
+**New paper out** — _Bulk Motions in the Black Hole Jet Sheath as a Candidate for the Comptonizing Corona._ ApJ 979, 199 — 📄 [[ADS]](https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S).

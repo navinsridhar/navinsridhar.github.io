@@ -6,7 +6,7 @@ name: Deploy site
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -50,4 +50,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
-          cname: ""   # set to your custom domain if you buy one, e.g. navinsridhar.com
+          cname: "" # set to your custom domain if you buy one, e.g. navinsridhar.com

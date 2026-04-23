@@ -24,7 +24,7 @@ nav_order: 6
 8. **"A research career in astrophysics"** — undergraduate talk, IISER Bhopal
    (Apr 2021).
 9. **Science with space-based X-ray telescopes** — high-school lecture at
-   *Frontiers of Science*, TIFR Mumbai's annual outreach program (Nov 2017).
+   _Frontiers of Science_, TIFR Mumbai's annual outreach program (Nov 2017).
 10. **GMRT tour** for TIFR Visiting Summer Research students (Jun 2016).
 
 ---
@@ -48,17 +48,19 @@ Highlights:
 
 **Scientific organizing committee**
 
-- Symposium on *The birth, life and death of black holes*,
+- Symposium on _The birth, life and death of black holes_,
   European Astronomical Society annual meeting, Leiden, Netherlands (Jun 2021).
 
 **At Stanford University (KIPAC)**
+
 - Postbaccalaureate program admissions committee (2025)
 - Ph.D. program admissions committee (2024–2025)
 - Started the weekly **KIPAC Compact Objects Group meetings** (Oct 2024–)
 
 **At Columbia University**
+
 - Organized an eight-part lecture series on
-  *Science Policy for Scientists* (Spring 2023)
+  _Science Policy for Scientists_ (Spring 2023)
 - Department representative, Arts & Sciences Graduate Council (2022–2023)
 - Graduate representative, faculty hiring committee, Astronomy (2021–2022)
 - Graduate representative, colloquium committee (2022–2023)
@@ -66,6 +68,7 @@ Highlights:
 - Co-convener of **Astrofest** (Sep 2020)
 
 **At IISER Bhopal**
+
 - Senate representative, Central Advisory Committee, Students Activity Council (2016–2017)
 - Elected Science Council secretary (2014–2016)
 - Convener of **Singularity**, the institute's annual science festival (Apr 2015)

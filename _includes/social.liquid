@@ -2,55 +2,70 @@
   Social icons include for al-folio.
   Reads from _data/socials.yml. Icons use Font Awesome + Academicons,
   both of which al-folio ships with.
-{%- endcomment %}
+{% endcomment -%}
 
 {% assign s = site.data.socials %}
 {% if s %}
-<div class="social">
-  <div class="social-icons">
-    {% if s.email %}
-      <a class="m-1" href="mailto:{{ s.email }}" title="email" rel="me"><i class="fas fa-envelope"></i></a>
-    {% endif %}
+  <div class="social">
+    <div class="social-icons">
+      {% if s.email %}
+        <a class="m-1" href="mailto:{{ s.email }}" title="email" rel="me"><i class="fas fa-envelope"></i></a>
+      {% endif %}
 
-    {% if s.orcid %}
-      <a class="m-1" href="https://orcid.org/{{ s.orcid }}" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a>
-    {% endif %}
+      {% if s.orcid %}
+        <a class="m-1" href="https://orcid.org/{{ s.orcid }}" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a>
+      {% endif %}
 
-    {% if s.google_scholar_id %}
-      <a class="m-1" href="https://scholar.google.com/citations?user={{ s.google_scholar_id }}" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-    {% endif %}
+      {% if s.google_scholar_id %}
+        <a
+          class="m-1"
+          href="https://scholar.google.com/citations?user={{ s.google_scholar_id }}"
+          target="_blank"
+          rel="noopener"
+          title="Google Scholar"
+          ><i class="ai ai-google-scholar"></i
+        ></a>
+      {% endif %}
 
-    {% if s.ads %}
-      <a class="m-1" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22{{ s.ads }}%22" target="_blank" rel="noopener" title="NASA ADS"><i class="ai ai-ads"></i></a>
-    {% endif %}
+      {% if s.ads %}
+        <a class="m-1" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22{{ s.ads }}%22" target="_blank" rel="noopener" title="NASA ADS"
+          ><i class="ai ai-ads"></i
+        ></a>
+      {% endif %}
 
-    {% if s.arxiv %}
-      <a class="m-1" href="https://arxiv.org/a/{{ s.arxiv }}.html" target="_blank" rel="noopener" title="arXiv"><i class="ai ai-arxiv"></i></a>
-    {% endif %}
+      {% if s.arxiv %}
+        <a class="m-1" href="https://arxiv.org/a/{{ s.arxiv }}.html" target="_blank" rel="noopener" title="arXiv"><i class="ai ai-arxiv"></i></a>
+      {% endif %}
 
-    {% if s.inspirehep_id %}
-      <a class="m-1" href="https://inspirehep.net/authors/{{ s.inspirehep_id }}" target="_blank" rel="noopener" title="INSPIRE-HEP"><i class="ai ai-inspire"></i></a>
-    {% endif %}
+      {% if s.inspirehep_id %}
+        <a class="m-1" href="https://inspirehep.net/authors/{{ s.inspirehep_id }}" target="_blank" rel="noopener" title="INSPIRE-HEP"
+          ><i class="ai ai-inspire"></i
+        ></a>
+      {% endif %}
 
-    {% if s.github_username %}
-      <a class="m-1" href="https://github.com/{{ s.github_username }}" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-    {% endif %}
+      {% if s.github_username %}
+        <a class="m-1" href="https://github.com/{{ s.github_username }}" target="_blank" rel="noopener" title="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+      {% endif %}
 
-    {% if s.linkedin_username %}
-      <a class="m-1" href="https://linkedin.com/in/{{ s.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    {% endif %}
+      {% if s.linkedin_username %}
+        <a class="m-1" href="https://linkedin.com/in/{{ s.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      {% endif %}
 
-    {% if s.mastodon_username %}
-      <a class="m-1" href="{{ s.mastodon_username }}" target="_blank" rel="me noopener" title="Mastodon"><i class="fab fa-mastodon"></i></a>
-    {% endif %}
+      {% if s.mastodon_username %}
+        <a class="m-1" href="{{ s.mastodon_username }}" target="_blank" rel="me noopener" title="Mastodon"><i class="fab fa-mastodon"></i></a>
+      {% endif %}
 
-    {% if s.bluesky_url %}
-      <a class="m-1" href="{{ s.bluesky_url }}" target="_blank" rel="noopener" title="Bluesky"><i class="fas fa-cloud"></i></a>
-    {% endif %}
+      {% if s.bluesky_url %}
+        <a class="m-1" href="{{ s.bluesky_url }}" target="_blank" rel="noopener" title="Bluesky"><i class="fas fa-cloud"></i></a>
+      {% endif %}
 
-    {% if s.rss_icon %}
-      <a class="m-1" href="{{ '/feed.xml' | relative_url }}" title="RSS feed"><i class="fas fa-rss"></i></a>
-    {% endif %}
+      {% if s.rss_icon %}
+        <a class="m-1" href="{{ '/feed.xml' | relative_url }}" title="RSS feed"><i class="fas fa-rss"></i></a>
+      {% endif %}
+    </div>
   </div>
-</div>
 {% endif %}

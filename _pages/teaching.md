@@ -9,8 +9,8 @@ nav_order: 4
 
 ## teaching & mentoring philosophy
 
-The best thing about doing a PhD in astronomy is how much of it is *making things
-intelligible* — to yourself, to collaborators, to referees, to students, to the
+The best thing about doing a PhD in astronomy is how much of it is _making things
+intelligible_ — to yourself, to collaborators, to referees, to students, to the
 public. I have come to see **teaching and research as the same craft**, and I try
 to bring the same discipline to both: ask a question that matters, be honest
 about what you actually know, and design the next step so the learner (or the
@@ -30,12 +30,12 @@ CTL's advanced-track Teaching Development Program (TDP, 2018–2024), and Columb
 CTL's Innovative Course Design Seminar (2021). I was also a Lead Instructor at
 the Yale Young Global Scholars (YYGS) program.
 
-The single biggest thing I took from all of this: *the learner has to do the
-thinking.* A lecture that hands students a finished result trains them to
+The single biggest thing I took from all of this: _the learner has to do the
+thinking._ A lecture that hands students a finished result trains them to
 recognise that result; a well-designed inquiry trains them to build the next
 one themselves. When I teach reflection spectroscopy or relativistic
-reconnection, I spend as much time designing what students will *do* as what I
-will *say*.
+reconnection, I spend as much time designing what students will _do_ as what I
+will _say_.
 
 ### 2 · Inclusion is a design choice, not a disposition.
 
@@ -51,7 +51,7 @@ Kyoto). Several have gone on to PhDs (UC San Diego, Stanford, MPA-Garching), and
 one — Kohki Uno — is now a postdoc at Columbia with a co-authored paper out of
 the collaboration. I was the **Head TA of the Columbia Astronomy Department**
 (2020–2021), and have served on graduate-admissions, colloquium, and
-faculty-hiring committees specifically because *who gets in the room* is a
+faculty-hiring committees specifically because _who gets in the room_ is a
 teaching decision.
 
 ### 3 · The course outlives the course.
@@ -70,10 +70,12 @@ order of magnitude, how to fail gracefully at a calculation and try again.
 ## selected teaching experience
 
 **At Stanford University (KIPAC / Physics)**
+
 - Mentor: Ningyue Fan, PhD student (Fall 2025–)
-- Founder / organiser, weekly *KIPAC Compact Objects Group* meetings (Oct 2024–)
+- Founder / organiser, weekly _KIPAC Compact Objects Group_ meetings (Oct 2024–)
 
 **At Columbia University**
+
 - **Head Teaching Assistant**, Department of Astronomy (2020–2021)
 - **Instructor**, undergraduate Introduction to Astronomy lab courses (Fall 2019, Spring 2020)
 - **Teaching Assistant**, two undergraduate non-major astronomy courses (Fall 2018, Spring 2019)
@@ -82,6 +84,7 @@ order of magnitude, how to fail gracefully at a calculation and try again.
 - Completed Columbia CTL's Innovative Course Design Seminar (2021)
 
 **Outside Columbia**
+
 - **Lead instructor**, Yale Young Global Scholars (YYGS), Yale University, New Haven, CT (Summer 2020; postponed due to COVID-19)
 - **UCSC ISEE Professional Development Program (PDP)**, UC Santa Cruz (Mar–Sept 2019) — inquiry-based learning for STEM education
 - Designed and taught an inquiry activity on statistics, **UCLA** (Sept 2019)
@@ -92,20 +95,20 @@ order of magnitude, how to fail gracefully at a calculation and try again.
 
 Total: **9 students**
 
-| Student | Role / Institution | Period | Outcome |
-|---|---|---|---|
-| **Ningyue Fan** | PhD student, Stanford | Fall 2025– | |
-| **Christopher Farias** | undergraduate, San Diego State U. | Summer 2025 | |
-| **Kohki Uno** | PhD student, Kyoto U. | Summer 2024 | 1 paper; now postdoc at Columbia |
-| **Arnab Kundu** | Masters thesis, IISER Kolkata | 2021–2022 | |
-| **Akash Vani** | Pune U. → MSc Heidelberg → PhD at MPA Garching | 2019–2020 | |
-| **Sanya Gupta** | Undergraduate research, Columbia | 2022–2025 | 2 papers; now PhD student at Stanford |
-| **Shifra Mandel** | Graduate mentor-mentee program, Columbia | 2021–2022 | |
-| **Shuhan Zhang** | WISC undergraduate program, Columbia | 2021 | Now PhD student at UC San Diego |
-| **Bhairavi Chandrasekhar** | Undergraduate summer intern, Columbia | 2020 | |
+| Student                    | Role / Institution                             | Period      | Outcome                               |
+| -------------------------- | ---------------------------------------------- | ----------- | ------------------------------------- |
+| **Ningyue Fan**            | PhD student, Stanford                          | Fall 2025–  |                                       |
+| **Christopher Farias**     | undergraduate, San Diego State U.              | Summer 2025 |                                       |
+| **Kohki Uno**              | PhD student, Kyoto U.                          | Summer 2024 | 1 paper; now postdoc at Columbia      |
+| **Arnab Kundu**            | Masters thesis, IISER Kolkata                  | 2021–2022   |                                       |
+| **Akash Vani**             | Pune U. → MSc Heidelberg → PhD at MPA Garching | 2019–2020   |                                       |
+| **Sanya Gupta**            | Undergraduate research, Columbia               | 2022–2025   | 2 papers; now PhD student at Stanford |
+| **Shifra Mandel**          | Graduate mentor-mentee program, Columbia       | 2021–2022   |                                       |
+| **Shuhan Zhang**           | WISC undergraduate program, Columbia           | 2021        | Now PhD student at UC San Diego       |
+| **Bhairavi Chandrasekhar** | Undergraduate summer intern, Columbia          | 2020        |                                       |
 
 ---
 
-*If you are a student interested in working with me on black-hole accretion,
+_If you are a student interested in working with me on black-hole accretion,
 FRBs, relativistic plasma physics, or multi-messenger astrophysics, please feel
-free to [email me](mailto:nsridhar@stanford.edu).*
+free to [email me](mailto:nsridhar@stanford.edu)._

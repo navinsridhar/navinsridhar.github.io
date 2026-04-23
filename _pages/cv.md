@@ -25,16 +25,16 @@ toc:
 ## current position
 
 **Simons Collaboration (SCEECS) Postdoctoral Fellow / KIPAC, Stanford University** (2024–2028)
-— supervisor: *Dr. Roger Blandford.*
+— supervisor: _Dr. Roger Blandford._
 
 ## education
 
 - **Ph.D. in Astrophysics**, Columbia University, NY (May 2024)
   - M.A. (2020), M.Phil. (2021)
-  - Advisors: *Dr. Lorenzo Sironi, Dr. Brian D. Metzger*
-  - Thesis: *Electromagnetic and Multimessenger Signals From Magnetized Outflows of Compact Object Binaries*
+  - Advisors: _Dr. Lorenzo Sironi, Dr. Brian D. Metzger_
+  - Thesis: _Electromagnetic and Multimessenger Signals From Magnetized Outflows of Compact Object Binaries_
 - **BS-MS in Physics**, IISER Bhopal (May 2018) — CPI: 9.05 / 10
-  - Thesis: *Accretion disk evolution around black holes, and thermonuclear bursts in neutron stars.* (Caltech and TIFR)
+  - Thesis: _Accretion disk evolution around black holes, and thermonuclear bursts in neutron stars._ (Caltech and TIFR)
 
 ## awards & fellowships
 
@@ -58,14 +58,14 @@ toc:
 
 - **Affiliated scientist, SCEECS** — Simons Collaboration on Extreme Electrodynamics of Compact Sources (2023–2027)
 - Visiting Researcher, **KITP, UC Santa Barbara** (Sep 2024)
-- Visiting Student Researcher, **Caltech** — host: *Dr. Sterl Phinney* (2023–2024)
-- *Stellar Interactions and the Transients they Cause*, **Aspen Center for Physics** (Jul 2023)
-- Visiting researcher, **Simons Foundation / CCA, Flatiron Institute** — advisors: *Dr. Sasha Philippov, Dr. Lorenzo Sironi* (2019–2023)
-- Summer Undergraduate Research Fellow (SURF), **Caltech** — advisors: *Dr. Javier García, Prof. Fiona Harrison* (Jul–Oct 2017)
-- Mitacs Globalink Research Intern, **University of Alberta** — advisor: *Dr. Rodrigo Fernández* (May–Jul 2017)
-- Visiting Summer Research Program, **TIFR Mumbai** — advisor: *Prof. Sudip Bhattacharyya* (May–Jul 2016)
-- Indian Academy of Sciences summer fellow, **ISRO Bangalore** — advisor: *Dr. Anuj Nandi* (Jun–Aug 2015)
-- Visiting Student Program, **IIAp Bangalore** — advisor: *Prof. Aruna Goswami* (May–Dec 2015)
+- Visiting Student Researcher, **Caltech** — host: _Dr. Sterl Phinney_ (2023–2024)
+- _Stellar Interactions and the Transients they Cause_, **Aspen Center for Physics** (Jul 2023)
+- Visiting researcher, **Simons Foundation / CCA, Flatiron Institute** — advisors: _Dr. Sasha Philippov, Dr. Lorenzo Sironi_ (2019–2023)
+- Summer Undergraduate Research Fellow (SURF), **Caltech** — advisors: _Dr. Javier García, Prof. Fiona Harrison_ (Jul–Oct 2017)
+- Mitacs Globalink Research Intern, **University of Alberta** — advisor: _Dr. Rodrigo Fernández_ (May–Jul 2017)
+- Visiting Summer Research Program, **TIFR Mumbai** — advisor: _Prof. Sudip Bhattacharyya_ (May–Jul 2016)
+- Indian Academy of Sciences summer fellow, **ISRO Bangalore** — advisor: _Dr. Anuj Nandi_ (Jun–Aug 2015)
+- Visiting Student Program, **IIAp Bangalore** — advisor: _Prof. Aruna Goswami_ (May–Dec 2015)
 
 ## observing experience & grants
 

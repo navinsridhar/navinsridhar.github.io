@@ -13,9 +13,9 @@ profile:
     <p>452 Lomita Mall</p>
     <p>Stanford, CA 94305</p>
 
-news: true            # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true          # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I am a **Simons Collaboration (SCEECS) postdoctoral fellow** at the [Kavli
@@ -29,15 +29,15 @@ magnetars, and the relativistic outflows they launch — and I connect those mod
 to the X-ray, radio, and multi-messenger observations that we now routinely take.
 Current threads include:
 
-* **Black-hole coronae and jets** — particle acceleration by magnetic reconnection,
+- **Black-hole coronae and jets** — particle acceleration by magnetic reconnection,
   plasmoid-driven Comptonization, and the bulk motions that may power the
   Comptonizing corona of accreting black holes.
-* **Fast Radio Bursts (FRBs)** — their progenitors (hyper-accreting X-ray binaries,
+- **Fast Radio Bursts (FRBs)** — their progenitors (hyper-accreting X-ray binaries,
   magnetars), their persistent radio counterparts, and the plasma-physics of the
   environments in which they are produced.
-* **Multi-messenger precursors** of neutron-star mergers, including shock-powered
+- **Multi-messenger precursors** of neutron-star mergers, including shock-powered
   radio transients from accelerating relativistic binary winds.
-* **Strong electromagnetic waves in pair plasmas**, relevant to magnetar
+- **Strong electromagnetic waves in pair plasmas**, relevant to magnetar
   magnetospheres and FRB emission mechanisms.
 
 I received my Ph.D. (2024) in Astrophysics from

@@ -21,13 +21,13 @@ on:
   schedule:
     # 08:00 UTC every day (00:00 US Pacific in winter, 01:00 in summer)
     - cron: "0 8 * * *"
-  workflow_dispatch:     # allow manual runs from the Actions tab
+  workflow_dispatch: # allow manual runs from the Actions tab
   push:
     paths:
       - ".github/workflows/sync-cv.yml"
 
 permissions:
-  contents: write        # needed to commit the compiled PDF back to the repo
+  contents: write # needed to commit the compiled PDF back to the repo
 
 concurrency:
   group: sync-cv
@@ -45,7 +45,7 @@ jobs:
 
       - name: Clone the Overleaf project
         env:
-          OVERLEAF_GIT_URL:   ${{ secrets.OVERLEAF_GIT_URL }}
+          OVERLEAF_GIT_URL: ${{ secrets.OVERLEAF_GIT_URL }}
           OVERLEAF_GIT_TOKEN: ${{ secrets.OVERLEAF_GIT_TOKEN }}
         run: |
           set -euo pipefail
