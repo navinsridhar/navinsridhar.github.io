@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Teaching philosophy, courses, and training.
 nav: true
 nav_order: 4
 ---
 
-## teaching & mentoring philosophy
+## Teaching & Mentoring Philosophy
 
 The best thing about doing a PhD in astronomy is how much of it is _making things
 intelligible_ — to yourself, to collaborators, to referees, to students, to the
@@ -67,7 +67,7 @@ order of magnitude, how to fail gracefully at a calculation and try again.
 
 ---
 
-## selected teaching experience
+## Selected Teaching Experience
 
 **At Stanford University (KIPAC / Physics)**
 
@@ -91,7 +91,7 @@ order of magnitude, how to fail gracefully at a calculation and try again.
 
 ---
 
-## mentees
+## Mentees
 
 Total: **9 students**
 

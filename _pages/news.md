@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /news/
-title: news & media
+title: News & Media
 description: Press coverage, public-outreach appearances, and research highlights.
 nav: true
 nav_order: 5
 ---
 
-## press & media coverage
+## Press & Media Coverage
 
 ### 2023
 
@@ -44,7 +44,7 @@ nav_order: 5
 
 ---
 
-## public-outreach talks & events
+## Public-Outreach Talks & Events
 
 <div class="news-list">
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /talks/
-title: talks
+title: Talks
 description: Invited seminars, conference talks, and colloquia. Asterisk (*) denotes invited.
 nav: true
 nav_order: 3

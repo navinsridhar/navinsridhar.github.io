@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Research
 description: Research interests, projects, and current threads.
 nav: true
 nav_order: 1
@@ -69,7 +69,7 @@ mechanisms can survive propagation.
 
 ---
 
-## working groups & collaborations
+## Working Groups & Collaborations
 
 - **NewAthena** science working group (2025–)
 - **AXIS** (Advanced X-ray Imaging Satellite) science working group (2022–)

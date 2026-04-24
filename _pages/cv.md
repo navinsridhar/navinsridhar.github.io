@@ -1,32 +1,30 @@
 ---
 layout: page
 permalink: /cv/
-title: cv
+title: CV
 nav: true
 nav_order: 7
-description: Curriculum Vitae. The PDF is auto-built from the latest Overleaf source by a GitHub Action each night.
 toc:
   sidebar: left
 ---
 
 <div class="cv-download mb-4">
   <a class="btn btn-primary z-depth-0" role="button" href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank">
-    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download full CV (PDF)
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download Full CV (PDF)
   </a>
-  &nbsp;<small><em>Last compiled from Overleaf — see commit history on GitHub.</em></small>
 </div>
 
-## contact
+## Contact
 
 - **Email:** <nsridhar@stanford.edu>
 - **Address:** Department of Physics & KIPAC, 452 Lomita Mall, Stanford, CA 94305
 
-## current position
+## Current Position
 
 **Simons Collaboration (SCEECS) Postdoctoral Fellow / KIPAC, Stanford University** (2024–2028)
 — supervisor: _Dr. Roger Blandford._
 
-## education
+## Education
 
 - **Ph.D. in Astrophysics**, Columbia University, NY (May 2024)
   - M.A. (2020), M.Phil. (2021)
@@ -35,7 +33,7 @@ toc:
 - **BS-MS in Physics**, IISER Bhopal (May 2018) — CPI: 9.05 / 10
   - Thesis: _Accretion disk evolution around black holes, and thermonuclear bursts in neutron stars._ (Caltech and TIFR)
 
-## awards & fellowships
+## Awards & Fellowships
 
 1. **PI, NASA NICER grant** (US $45,000) — 2026–2027
 2. **Neil Gehrels Prize Fellowship**, JSI, University of Maryland & NASA — 2024
@@ -53,7 +51,7 @@ toc:
 14. Mitacs Globalink Research Internship award (~CA $6,600) — May–Jul 2017
 15. **INSPIRE fellowship**, DST, Government of India (INR 400,000) — 2013–2018
 
-## research experience / visits
+## Research Experience & Visits
 
 - **Affiliated scientist, SCEECS** — Simons Collaboration on Extreme Electrodynamics of Compact Sources (2023–2027)
 - Visiting Researcher, **KITP, UC Santa Barbara** (Sep 2024)
@@ -66,7 +64,7 @@ toc:
 - Indian Academy of Sciences summer fellow, **ISRO Bangalore** — advisor: _Dr. Anuj Nandi_ (Jun–Aug 2015)
 - Visiting Student Program, **IIAp Bangalore** — advisor: _Prof. Aruna Goswami_ (May–Dec 2015)
 
-## observing experience & grants
+## Observing Experience & Grants
 
 **X-ray: 15 Ms · Radio: 142 ks · Optical: 65 ks · IR: 4.5 hr. Total grant funding awarded: US $624,935.**
 

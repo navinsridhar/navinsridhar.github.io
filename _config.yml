@@ -2,7 +2,7 @@
 # Site settings — al-folio overrides for Navin Sridhar
 # -----------------------------------------------------------------------------
 
-title: navin sridhar
+title: Navin Sridhar
 first_name: Navin
 middle_name:
 last_name: Sridhar
@@ -68,8 +68,8 @@ search_enabled: true
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: notes
-blog_description: occasional notes & updates
+blog_name: Notes
+blog_description: Occasional notes & updates
 permalink: /blog/:year/:title/
 lsi: false
 excerpt_separator: "<!--more-->"
@@ -183,7 +183,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["research", "teaching", "outreach", "notes"]
+display_tags: ["Research", "Teaching", "Outreach", "Notes"]
 display_categories: []
 
 # -----------------------------------------------------------------------------

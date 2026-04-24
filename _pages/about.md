@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href="https://kipac.stanford.edu/">KIPAC</a>, <a href="https://physics.stanford.edu/">Department of Physics</a>, Stanford University · <a href="mailto:nsridhar@stanford.edu">nsridhar@stanford.edu</a>
 

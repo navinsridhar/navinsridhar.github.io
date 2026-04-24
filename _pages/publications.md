@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: A list of my publications. Please see <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Sridhar%2C+Navin%22&sort=date+desc">NASA ADS</a> or <a href="https://scholar.google.com/citations?user=_F9gI4QAAAAJ">Google Scholar</a> for an always up-to-date list.
 nav: true
 nav_order: 2

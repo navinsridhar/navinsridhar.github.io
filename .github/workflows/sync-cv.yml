@@ -93,10 +93,14 @@ jobs:
           set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- assets/pdf/CV.pdf; then
+          # Stage first, *then* compare staged vs HEAD. This correctly handles
+          # both modifications to a tracked PDF and the very first time the
+          # PDF appears in the repo (otherwise `git diff` would see no change
+          # because the new file is untracked, and we'd never commit).
+          git add assets/pdf/CV.pdf
+          if git diff --cached --quiet -- assets/pdf/CV.pdf; then
             echo "No change in CV PDF — skipping commit."
             exit 0
           fi
-          git add assets/pdf/CV.pdf
           git commit -m "chore: sync CV from Overleaf ($(date -u +%Y-%m-%d))"
           git push

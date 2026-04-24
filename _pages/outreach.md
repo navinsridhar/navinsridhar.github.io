@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /outreach/
-title: outreach
+title: Outreach
 description: Science outreach, mentoring, and professional service.
 nav: true
 nav_order: 6
 ---
 
-## science outreach
+## Science Outreach
 
 1. **Public outreach talk** — KIPAC community day, Stanford University (Apr 2025).
 2. **"A research career in astrophysics"** — undergraduate talk, IISER Bhopal (Jan 2025).
@@ -29,7 +29,7 @@ nav_order: 6
 
 ---
 
-## mentoring
+## Mentoring
 
 I have mentored **9 students** across four institutions. See the
 [teaching](/teaching/) page for the full list and for my mentoring philosophy.
@@ -44,7 +44,7 @@ Highlights:
 
 ---
 
-## professional leadership
+## Professional Leadership
 
 **Scientific organizing committee**
 
@@ -77,7 +77,7 @@ Highlights:
 
 ---
 
-## professional service
+## Professional Service
 
 ### Referee for journals
 
@@ -91,7 +91,7 @@ NASA's **Chandra** and **NICER** observatory review panels · National Science
 Foundation · AstroSat · NCRA-uGMRT · Observer at **Hubble Space Telescope**
 time-allocation committee.
 
-### Science-working-group member
+### Science-Working-Group Member
 
 **NewAthena** (2025–) · **Advanced X-ray Imaging Satellite** (AXIS) (2022–) ·
 **High-Energy X-ray Probe** (HEX-P) (2022–) ·
