@@ -14,7 +14,7 @@ profile:
     <p>Stanford, CA 94305</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # set true to show papers marked `selected={true}` on the landing page
 social: true # includes social icons at the bottom of the page
 ---
 
@@ -53,10 +53,3 @@ Professional Development Program, Columbia's Center for Teaching & Learning
 advanced-track TDP, and have mentored nine students across four institutions.
 You can read more about this on the
 [teaching](/teaching/), [outreach](/outreach/), and [news](/news/) pages.
-
-**Quick links:** [CV]({{ '/assets/pdf/CV.pdf' | relative_url }}) ·
-[Publications](/publications/) ·
-[Google Scholar](https://scholar.google.com/citations?user=_F9gI4QAAAAJ) ·
-[NASA ADS](https://ui.adsabs.harvard.edu/search/q=author%3A%22Sridhar%2C+Navin%22) ·
-[GitHub](https://github.com/navinsridhar) ·
-[ORCID](https://orcid.org/0000-0002-5519-9550)

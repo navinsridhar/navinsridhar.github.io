@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /news/
-title: News & Media
+title: "News\u00A0&\u00A0Media"
 description: Press coverage, public-outreach appearances, and research highlights.
 nav: true
 nav_order: 5

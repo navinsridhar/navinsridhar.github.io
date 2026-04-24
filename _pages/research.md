@@ -61,9 +61,10 @@ electromagnetic signature alongside gravitational waves and short GRBs.
 ## 4 · Strong electromagnetic waves in pair plasmas
 
 What does an FRB pulse actually do as it propagates out of a magnetar
-magnetosphere? In an upcoming paper (Sridhar, Sobacchi, Sironi+ 2026, in prep.)
-we treat the **nonlinear interaction of strong electromagnetic waves with
-unmagnetized pair plasma in the relativistic regime** with first-principles PIC
+magnetosphere? In Sridhar, Sobacchi, Sironi+ 2026
+([arXiv:2604.11698](https://arxiv.org/abs/2604.11698)) we treat the
+**nonlinear interaction of strong electromagnetic waves with unmagnetized
+pair plasma in the relativistic regime** with first-principles PIC
 simulations. The results have direct implications for which FRB emission
 mechanisms can survive propagation.
 

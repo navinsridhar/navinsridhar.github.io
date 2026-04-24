@@ -78,15 +78,34 @@ jobs:
         run: |
           set -euo pipefail
           cd overleaf-cv
+
+          echo "::group::.tex files found at project root"
+          ls -la *.tex 2>/dev/null || echo "(none)"
+          echo "::endgroup::"
+
+          # If the configured MAIN_TEX_FILE isn't there, fall back to the
+          # single .tex file in the project root (if exactly one exists).
           if [ ! -f "${MAIN_TEX_FILE}" ]; then
-            echo "::error::${MAIN_TEX_FILE} not found in Overleaf project. Set the MAIN_TEX_FILE repo variable."
-            ls -la
-            exit 1
+            echo "::warning::${MAIN_TEX_FILE} not found. Attempting auto-detection."
+            TEX_COUNT=$(ls *.tex 2>/dev/null | wc -l | tr -d ' ')
+            if [ "${TEX_COUNT}" = "1" ]; then
+              MAIN_TEX_FILE="$(ls *.tex)"
+              echo "Auto-detected MAIN_TEX_FILE=${MAIN_TEX_FILE}"
+            else
+              echo "::error::Could not auto-detect (found ${TEX_COUNT} .tex files). Set the MAIN_TEX_FILE repo variable under Settings > Secrets and variables > Actions > Variables."
+              exit 1
+            fi
           fi
+
           latexmk -pdf -interaction=nonstopmode -halt-on-error "${MAIN_TEX_FILE}"
           OUT_PDF="${MAIN_TEX_FILE%.tex}.pdf"
+          if [ ! -f "${OUT_PDF}" ]; then
+            echo "::error::Expected output ${OUT_PDF} not produced by latexmk."
+            exit 1
+          fi
           mkdir -p ../assets/pdf
           cp "${OUT_PDF}" ../assets/pdf/CV.pdf
+          ls -la ../assets/pdf/
 
       - name: Commit & push the updated PDF (if changed)
         run: |
@@ -98,9 +117,15 @@ jobs:
           # PDF appears in the repo (otherwise `git diff` would see no change
           # because the new file is untracked, and we'd never commit).
           git add assets/pdf/CV.pdf
+          echo "::group::git status"
+          git status
+          echo "::endgroup::"
           if git diff --cached --quiet -- assets/pdf/CV.pdf; then
             echo "No change in CV PDF — skipping commit."
             exit 0
           fi
           git commit -m "chore: sync CV from Overleaf ($(date -u +%Y-%m-%d))"
+          # Pull-rebase first in case the deploy workflow pushed something
+          # to main while we were compiling.
+          git pull --rebase origin main
           git push
