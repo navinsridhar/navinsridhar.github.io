@@ -1,20 +1,19 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: cv
 nav: true
 nav_order: 7
-cv_pdf: CV.pdf
 description: Curriculum Vitae. The PDF is auto-built from the latest Overleaf source by a GitHub Action each night.
 toc:
   sidebar: left
 ---
 
-<div class="cv-download">
-  <a class="btn btn-sm z-depth-0" role="button" href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank">
-    <i class="fa fa-file-pdf"></i> Download full CV (PDF)
+<div class="cv-download mb-4">
+  <a class="btn btn-primary z-depth-0" role="button" href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download full CV (PDF)
   </a>
-  &nbsp;<small><em>Last compiled from Overleaf: see commit history on GitHub.</em></small>
+  &nbsp;<small><em>Last compiled from Overleaf — see commit history on GitHub.</em></small>
 </div>
 
 ## contact
