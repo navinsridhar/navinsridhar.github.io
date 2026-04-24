@@ -10,7 +10,7 @@ toc:
 
 <div class="cv-download mb-4">
   <a class="btn btn-primary z-depth-0" role="button" href="{{ '/assets/pdf/CV.pdf' | relative_url }}" target="_blank">
-    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download Full CV (PDF)
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; View full CV
   </a>
 </div>
 
@@ -68,8 +68,7 @@ toc:
 
 **X-ray: 15 Ms · Radio: 142 ks · Optical: 65 ks · IR: 4.5 hr. Total grant funding awarded: US $624,935.**
 
-Please see the [publications](/publications/), [talks](/talks/), and
-[outreach](/outreach/) pages, or the
-[PDF CV]({{ '/assets/pdf/CV.pdf' | relative_url }}) for full details including
-all observing proposals, summer schools, computing experience, and professional
-service.
+Please see the [publications](/publications/) and [outreach](/outreach/)
+pages, or the [PDF CV]({{ '/assets/pdf/CV.pdf' | relative_url }}) for full
+details including all observing proposals, summer schools, invited and
+contributed talks, computing experience, and professional service.
