@@ -20,22 +20,22 @@ nav_order: 2
 
   <h2>First-author publications</h2>
 
-  {% bibliography -f papers --query "@*[category=first]" %}
+{% bibliography -f papers --group_by none --query @*[category=first]* %}
 
   <h2>Second / third-author publications</h2>
 
-  {% bibliography -f papers --query "@*[category=second_third]" %}
+{% bibliography -f papers --group_by none --query @*[category=secondthird]* %}
 
   <h2>n<sup>th</sup>-author publications</h2>
 
-  {% bibliography -f papers --query "@*[category=nth]" %}
+{% bibliography -f papers --group_by none --query @*[category=nth]* %}
 
   <h2>Books and white papers</h2>
 
-  {% bibliography -f papers --query "@*[category=books]" %}
+{% bibliography -f papers --group_by none --query @*[category=books]* %}
 
   <h2>Astronomical telegrams</h2>
 
-  {% bibliography -f papers --query "@*[category=atel]" %}
+{% bibliography -f papers --group_by none --query @*[category=atel]* %}
 
 </div>
