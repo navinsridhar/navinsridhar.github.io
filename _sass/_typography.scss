@@ -4,6 +4,64 @@
 
 @use "variables" as v;
 
+/* ----------------------------------------------------------------------------
+ * Font stack
+ *
+ * al-folio's gem defaults already load Roboto + Roboto Slab + Roboto Mono via
+ * Google Fonts (see _includes/head.liquid → site.third_party_libraries.google_fonts).
+ * We pin those choices explicitly here so the typography matches what other
+ * al-folio sites (e.g. https://oliverphilcox.github.io/) render and so the
+ * look does not drift if upstream defaults change.
+ * --------------------------------------------------------------------------*/
+
+$font-sans:
+  "Roboto",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Helvetica,
+  Arial,
+  sans-serif;
+$font-serif: "Roboto Slab", "Source Serif Pro", Georgia, "Times New Roman", serif;
+$font-mono: "Roboto Mono", "SF Mono", Menlo, Consolas, monospace;
+
+html,
+body {
+  font-family: $font-sans;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.005em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.profile .name {
+  font-family: $font-serif;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+}
+
+code,
+kbd,
+pre,
+samp,
+.highlight {
+  font-family: $font-mono;
+}
+
 p,
 h1,
 h2,

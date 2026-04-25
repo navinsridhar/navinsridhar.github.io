@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Subtle research-themed page background for navinsridhar.github.io.
+
+  Evokes high-energy astrophysics without being loud:
+    * concentric accretion-disk rings
+    * a pair of dipolar magnetic-field lines (top/bottom)
+    * twin relativistic jets
+    * a sparse star field
+
+  The whole thing is rendered very low-contrast at the use site (see
+  the rule for ``body::before`` in _sass/_layout.scss). View this file
+  on its own and the colours look bold; layered into the page at
+  ~0.05 opacity it just whispers in the corner of your eye.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="disk" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#1c6ea4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0b1d33" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bh" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#0b1d33" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0b1d33" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="jet" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7fc8ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7fc8ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7fc8ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Star field (sparse) -->
+  <g fill="#1c6ea4">
+    <circle cx="120" cy="80"   r="1.4"/>
+    <circle cx="280" cy="160"  r="1.0"/>
+    <circle cx="440" cy="60"   r="1.6"/>
+    <circle cx="640" cy="120"  r="1.2"/>
+    <circle cx="900" cy="40"   r="1.4"/>
+    <circle cx="1100" cy="180" r="1.0"/>
+    <circle cx="1280" cy="80"  r="1.4"/>
+    <circle cx="1480" cy="140" r="1.2"/>
+    <circle cx="1540" cy="320" r="1.6"/>
+    <circle cx="60"   cy="320" r="1.2"/>
+    <circle cx="220"  cy="540" r="1.0"/>
+    <circle cx="380"  cy="800" r="1.6"/>
+    <circle cx="560"  cy="940" r="1.2"/>
+    <circle cx="780"  cy="860" r="1.4"/>
+    <circle cx="1020" cy="940" r="1.2"/>
+    <circle cx="1240" cy="780" r="1.6"/>
+    <circle cx="1440" cy="600" r="1.0"/>
+    <circle cx="1560" cy="880" r="1.2"/>
+  </g>
+
+  <!-- Faint dipole field lines, top and bottom -->
+  <g fill="none" stroke="#1c6ea4" stroke-width="1.5" stroke-linecap="round">
+    <path d="M 800 500 C 1100 400, 1300 200, 1100 50"  opacity="0.55"/>
+    <path d="M 800 500 C 1200 460, 1450 300, 1500 100" opacity="0.40"/>
+    <path d="M 800 500 C  500 400,  300 200,  500 50"  opacity="0.55"/>
+    <path d="M 800 500 C  400 460,  150 300,  100 100" opacity="0.40"/>
+    <path d="M 800 500 C 1100 600, 1300 800, 1100 950" opacity="0.55"/>
+    <path d="M 800 500 C 1200 540, 1450 700, 1500 900" opacity="0.40"/>
+    <path d="M 800 500 C  500 600,  300 800,  500 950" opacity="0.55"/>
+    <path d="M 800 500 C  400 540,  150 700,  100 900" opacity="0.40"/>
+  </g>
+
+  <!-- Accretion disk: concentric ellipses -->
+  <g transform="translate(800 500)" stroke="#1c6ea4" fill="none">
+    <ellipse rx="380" ry="60" stroke-width="1.4" opacity="0.70"/>
+    <ellipse rx="320" ry="50" stroke-width="1.2" opacity="0.55"/>
+    <ellipse rx="260" ry="42" stroke-width="1.0" opacity="0.45"/>
+    <ellipse rx="200" ry="34" stroke-width="0.8" opacity="0.35"/>
+    <ellipse rx="140" ry="24" stroke-width="0.7" opacity="0.30"/>
+  </g>
+
+  <!-- Diffuse disk fill -->
+  <ellipse cx="800" cy="500" rx="380" ry="60" fill="url(#disk)" opacity="0.55"/>
+
+  <!-- Twin jets -->
+  <rect x="794" y="0"   width="12" height="500" fill="url(#jet)" opacity="0.85"/>
+  <rect x="794" y="500" width="12" height="500" fill="url(#jet)" opacity="0.85"/>
+
+  <!-- Central black hole -->
+  <circle cx="800" cy="500" r="36" fill="url(#bh)"/>
+  <circle cx="800" cy="500" r="14" fill="#000"/>
+</svg>

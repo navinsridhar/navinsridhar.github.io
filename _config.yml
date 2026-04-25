@@ -31,7 +31,7 @@ last_updated: false
 
 # Use the light/dark palette al-folio ships with.
 # If you prefer deeper colours, tweak _sass/_variables.scss after forking.
-theme_color: "#b509ac"
+theme_color: "#1c6ea4"
 
 # -----------------------------------------------------------------------------
 # RSS feed / GA

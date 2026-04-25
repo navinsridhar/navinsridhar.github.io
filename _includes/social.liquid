@@ -27,7 +27,9 @@
         ></a>
       {% endif %}
 
-      {% if s.ads %}
+      {% if s.ads_library_url %}
+        <a class="m-1" href="{{ s.ads_library_url }}" target="_blank" rel="noopener" title="NASA ADS Library"><i class="ai ai-ads"></i></a>
+      {% elsif s.ads %}
         <a class="m-1" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22{{ s.ads }}%22" target="_blank" rel="noopener" title="NASA ADS"
           ><i class="ai ai-ads"></i
         ></a>
@@ -52,6 +54,12 @@
       {% if s.linkedin_username %}
         <a class="m-1" href="https://linkedin.com/in/{{ s.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn"
           ><i class="fab fa-linkedin"></i
+        ></a>
+      {% endif %}
+
+      {% if s.twitter_username %}
+        <a class="m-1" href="https://x.com/{{ s.twitter_username }}" target="_blank" rel="noopener" title="X (Twitter)"
+          ><i class="fab fa-x-twitter"></i
         ></a>
       {% endif %}
 

@@ -8,6 +8,7 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  position: relative;
 
   h1,
   h2,
@@ -17,6 +18,30 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
+
+  /* Subtle research-themed background — accretion disk + jets + dipole field
+   * lines + sparse star field. Pinned to the viewport, well behind everything,
+   * and rendered at very low opacity so it never competes with content. */
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("/assets/img/site-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.06;
+    pointer-events: none;
+  }
+}
+
+html[data-theme="dark"] body::before {
+  /* Dark mode: invert the SVG so the cool-blue ink reads as light cyan
+   * against the dark background, and lift opacity slightly. */
+  filter: invert(1) hue-rotate(180deg);
+  opacity: 0.08;
 }
 
 body.fixed-top-nav {

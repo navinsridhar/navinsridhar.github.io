@@ -1,0 +1,109 @@
+name: Sync papers.bib from ADS library
+
+# Discover newly-published papers from a public NASA ADS library and
+# append them to _bibliography/papers.bib so the website stays in sync.
+#
+# What this does
+# --------------
+# * Pulls bibcodes from the ADS library given by ADS_LIBRARY_ID.
+# * Diffs them against bibcodes already cited in papers.bib.
+# * For any *new* bibcode, fetches the BibTeX from ADS and appends the
+#   entry under a "Pending categorization" block at the bottom of
+#   papers.bib with `category = {pending}` (which the publications page
+#   does NOT render — so nothing shows up until the human moves it
+#   into first/secondthird/nth/books/atel and adjusts metadata).
+# * Opens a pull request when there is anything new. We deliberately
+#   avoid auto-merging so curated entries above are never overwritten.
+#
+# Required configuration
+# ----------------------
+# * Secret  ADS_API_TOKEN  — generate at
+#                            https://ui.adsabs.harvard.edu/user/settings/token
+# * Variable ADS_LIBRARY_ID — defaults to the user's public library
+#                            (override under Settings > Variables if it
+#                            ever changes).
+
+on:
+  schedule:
+    - cron: "0 9 * * 1" # 09:00 UTC every Monday
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/sync-ads-bib.yml"
+      - "scripts/sync_ads_library.py"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-ads-bib
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync ADS library into papers.bib
+        id: sync
+        env:
+          ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
+          ADS_LIBRARY_ID: ${{ vars.ADS_LIBRARY_ID || 'AspXr7NhTAaWjzQzWm-Kuw' }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ADS_API_TOKEN}" ]; then
+            echo "::error::ADS_API_TOKEN secret is missing. Generate one at https://ui.adsabs.harvard.edu/user/settings/token and add it under Settings > Secrets and variables > Actions > Secrets."
+            exit 1
+          fi
+          python scripts/sync_ads_library.py \
+            --library-id "${ADS_LIBRARY_ID}" \
+            --bib _bibliography/papers.bib
+
+      - name: Open pull request if there are changes
+        if: steps.sync.outputs.new_count != '' && steps.sync.outputs.new_count != '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(bib): pull new entries from ADS library"
+          title: "chore(bib): ${{ steps.sync.outputs.new_count }} new ADS entr(y/ies) to categorize"
+          body: |
+            Automated sync from the public ADS library
+            (`${{ vars.ADS_LIBRARY_ID || 'AspXr7NhTAaWjzQzWm-Kuw' }}`).
+
+            New bibcodes appended to `_bibliography/papers.bib` under a
+            **Pending categorization** block:
+
+            ```
+            ${{ steps.sync.outputs.new_bibcodes }}
+            ```
+
+            ### What you need to do
+
+            1. Move each new entry into the correct section
+               (Lead-author / Second–third-author / nth-author /
+               Books & white papers / Astronomical telegrams).
+            2. Replace `category = {pending}` with the right value
+               (`first` / `secondthird` / `nth` / `books` / `atel`).
+            3. Optionally clean up the ADS-exported entry: rename the
+               bib key to your `lastname<year><tag>` style, swap in the
+               `apj` / `mnras` / etc. journal macros, and add `selected
+               = {true}` if it should appear on the landing page.
+            4. Merge the PR.
+
+            Until merged, the new entries will not render on
+            `/publications/` because the page only queries the five
+            curated categories above.
+          branch: bot/sync-ads-bib
+          delete-branch: true
+          labels: |
+            automated
+            bibliography
