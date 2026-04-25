@@ -1,88 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Subtle research-themed page background for navinsridhar.github.io.
+  Page background for navinsridhar.github.io.
 
-  Evokes high-energy astrophysics without being loud:
-    * concentric accretion-disk rings
-    * a pair of dipolar magnetic-field lines (top/bottom)
-    * twin relativistic jets
-    * a sparse star field
+  A uniform-contrast, black-and-white line schematic of a high-energy
+  astrophysics scene:
+    * central accreting black hole with a thin equatorial disk
+    * twin relativistic jets / outflows
+    * a pair of orbiting neutron stars (with hint dipole field lines)
+    * sparse star field
 
-  The whole thing is rendered very low-contrast at the use site (see
-  the rule for ``body::before`` in _sass/_layout.scss). View this file
-  on its own and the colours look bold; layered into the page at
-  ~0.05 opacity it just whispers in the corner of your eye.
+  Everything is rendered at a single, uniform stroke color and stroke
+  opacity. There are NO fills, NO radial gradients, and NO bright or
+  dark hot spots — the whole canvas has the same low-contrast,
+  hairline-drawing density. Layered behind the page at a 0.72 alpha
+  white (or dark) wash from _sass/_layout.scss, it whispers behind
+  the text without producing any localized glare.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
   <defs>
-    <radialGradient id="disk" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fff" stop-opacity="0.95"/>
-      <stop offset="40%" stop-color="#1c6ea4" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#0b1d33" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="bh" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#000" stop-opacity="1"/>
-      <stop offset="60%" stop-color="#0b1d33" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#0b1d33" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="jet" x1="50%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%" stop-color="#7fc8ff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#7fc8ff" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#7fc8ff" stop-opacity="0"/>
-    </linearGradient>
+    <!-- Uniform stroke style for the entire scene. -->
+    <style>
+      .ink { fill: none; stroke: #444; stroke-opacity: 0.45; stroke-linecap: round; stroke-linejoin: round; }
+      .ink-thin { fill: none; stroke: #444; stroke-opacity: 0.35; stroke-linecap: round; stroke-linejoin: round; }
+      .star { fill: #444; fill-opacity: 0.45; }
+    </style>
   </defs>
 
-  <!-- Star field (sparse) -->
-  <g fill="#1c6ea4">
-    <circle cx="120" cy="80"   r="1.4"/>
-    <circle cx="280" cy="160"  r="1.0"/>
-    <circle cx="440" cy="60"   r="1.6"/>
-    <circle cx="640" cy="120"  r="1.2"/>
-    <circle cx="900" cy="40"   r="1.4"/>
-    <circle cx="1100" cy="180" r="1.0"/>
-    <circle cx="1280" cy="80"  r="1.4"/>
-    <circle cx="1480" cy="140" r="1.2"/>
-    <circle cx="1540" cy="320" r="1.6"/>
-    <circle cx="60"   cy="320" r="1.2"/>
-    <circle cx="220"  cy="540" r="1.0"/>
-    <circle cx="380"  cy="800" r="1.6"/>
-    <circle cx="560"  cy="940" r="1.2"/>
-    <circle cx="780"  cy="860" r="1.4"/>
-    <circle cx="1020" cy="940" r="1.2"/>
-    <circle cx="1240" cy="780" r="1.6"/>
-    <circle cx="1440" cy="600" r="1.0"/>
-    <circle cx="1560" cy="880" r="1.2"/>
+  <!-- Sparse star field (hairline dots, uniform tone). -->
+  <g class="star">
+    <circle cx="120"  cy="80"   r="1.2"/>
+    <circle cx="280"  cy="160"  r="1.0"/>
+    <circle cx="440"  cy="60"   r="1.4"/>
+    <circle cx="640"  cy="120"  r="1.0"/>
+    <circle cx="900"  cy="40"   r="1.2"/>
+    <circle cx="1100" cy="180"  r="1.0"/>
+    <circle cx="1280" cy="80"   r="1.2"/>
+    <circle cx="1480" cy="140"  r="1.0"/>
+    <circle cx="1540" cy="320"  r="1.4"/>
+    <circle cx="60"   cy="320"  r="1.0"/>
+    <circle cx="220"  cy="540"  r="1.0"/>
+    <circle cx="380"  cy="800"  r="1.4"/>
+    <circle cx="560"  cy="940"  r="1.0"/>
+    <circle cx="780"  cy="860"  r="1.2"/>
+    <circle cx="1020" cy="940"  r="1.0"/>
+    <circle cx="1240" cy="780"  r="1.4"/>
+    <circle cx="1440" cy="600"  r="1.0"/>
+    <circle cx="1560" cy="880"  r="1.0"/>
+    <circle cx="340"  cy="240"  r="1.0"/>
+    <circle cx="980"  cy="300"  r="1.0"/>
+    <circle cx="1340" cy="460"  r="1.0"/>
+    <circle cx="160"  cy="700"  r="1.0"/>
+    <circle cx="700"  cy="40"   r="1.0"/>
+    <circle cx="1200" cy="60"   r="1.0"/>
   </g>
 
-  <!-- Faint dipole field lines, top and bottom -->
-  <g fill="none" stroke="#1c6ea4" stroke-width="1.5" stroke-linecap="round">
-    <path d="M 800 500 C 1100 400, 1300 200, 1100 50"  opacity="0.55"/>
-    <path d="M 800 500 C 1200 460, 1450 300, 1500 100" opacity="0.40"/>
-    <path d="M 800 500 C  500 400,  300 200,  500 50"  opacity="0.55"/>
-    <path d="M 800 500 C  400 460,  150 300,  100 100" opacity="0.40"/>
-    <path d="M 800 500 C 1100 600, 1300 800, 1100 950" opacity="0.55"/>
-    <path d="M 800 500 C 1200 540, 1450 700, 1500 900" opacity="0.40"/>
-    <path d="M 800 500 C  500 600,  300 800,  500 950" opacity="0.55"/>
-    <path d="M 800 500 C  400 540,  150 700,  100 900" opacity="0.40"/>
+  <!-- Central accreting black hole + disk + jets, drawn as hairline. -->
+  <g transform="translate(800 500)">
+    <!-- Twin relativistic jets / outflows: paired hairline boundaries
+         that fan very slightly outward, no gradient fill. -->
+    <g class="ink-thin" stroke-width="1.0">
+      <path d="M -10 -480 L -22 0 L 22 0 L 10 -480"/>
+      <path d="M -10  480 L -22 0 L 22 0 L 10  480"/>
+      <!-- Internal hairlines suggesting collimated outflow structure. -->
+      <line x1="0" y1="-480" x2="0" y2="-30"/>
+      <line x1="0" y1=" 480" x2="0" y2=" 30"/>
+      <line x1="-6" y1="-480" x2="-12" y2="-30"/>
+      <line x1=" 6" y1="-480" x2=" 12" y2="-30"/>
+      <line x1="-6" y1=" 480" x2="-12" y2=" 30"/>
+      <line x1=" 6" y1=" 480" x2=" 12" y2=" 30"/>
+    </g>
+
+    <!-- Equatorial accretion disk: concentric thin ellipses, all the
+         same stroke weight and opacity (no fill). -->
+    <g class="ink" stroke-width="1.0">
+      <ellipse rx="380" ry="58"/>
+      <ellipse rx="320" ry="48"/>
+      <ellipse rx="260" ry="40"/>
+      <ellipse rx="200" ry="32"/>
+      <ellipse rx="140" ry="22"/>
+      <ellipse rx=" 90" ry="14"/>
+    </g>
+
+    <!-- Black hole horizon, drawn as an outline (not a filled disk). -->
+    <circle class="ink" stroke-width="1.2" r="22"/>
+    <!-- ISCO hint -->
+    <circle class="ink-thin" stroke-width="0.8" r="44"/>
+
+    <!-- Photon-ring hint (one larger thin circle). -->
+    <circle class="ink-thin" stroke-width="0.8" r="64"/>
   </g>
 
-  <!-- Accretion disk: concentric ellipses -->
-  <g transform="translate(800 500)" stroke="#1c6ea4" fill="none">
-    <ellipse rx="380" ry="60" stroke-width="1.4" opacity="0.70"/>
-    <ellipse rx="320" ry="50" stroke-width="1.2" opacity="0.55"/>
-    <ellipse rx="260" ry="42" stroke-width="1.0" opacity="0.45"/>
-    <ellipse rx="200" ry="34" stroke-width="0.8" opacity="0.35"/>
-    <ellipse rx="140" ry="24" stroke-width="0.7" opacity="0.30"/>
+  <!-- Neutron-star binary off to one side: two small ringed circles
+       connected by a faint orbital ellipse, with a couple of dipole
+       field-line hints around each. All hairline, single tone. -->
+  <g transform="translate(220 220)">
+    <!-- NS 1 -->
+    <circle class="ink" stroke-width="1.0" cx="-40" cy="0" r="10"/>
+    <circle class="ink-thin" stroke-width="0.8" cx="-40" cy="0" r="20"/>
+    <path class="ink-thin" stroke-width="0.8" d="M -40 -20 C -10 -45, -10 25, -40 0"/>
+    <path class="ink-thin" stroke-width="0.8" d="M -40 -20 C -70 -45, -70 25, -40 0"/>
+    <!-- NS 2 -->
+    <circle class="ink" stroke-width="1.0" cx="40" cy="0" r="10"/>
+    <circle class="ink-thin" stroke-width="0.8" cx="40" cy="0" r="20"/>
+    <path class="ink-thin" stroke-width="0.8" d="M 40 -20 C 10 -45, 10 25, 40 0"/>
+    <path class="ink-thin" stroke-width="0.8" d="M 40 -20 C 70 -45, 70 25, 40 0"/>
+    <!-- Inspiraling orbit -->
+    <ellipse class="ink-thin" stroke-width="0.8" rx="60" ry="14"/>
+    <ellipse class="ink-thin" stroke-width="0.8" rx="48" ry="11"/>
   </g>
 
-  <!-- Diffuse disk fill -->
-  <ellipse cx="800" cy="500" rx="380" ry="60" fill="url(#disk)" opacity="0.55"/>
+  <!-- A single isolated magnetar / pulsar in the opposite corner with
+       hairline dipole field lines. -->
+  <g transform="translate(1380 780)">
+    <circle class="ink" stroke-width="1.0" r="9"/>
+    <circle class="ink-thin" stroke-width="0.8" r="18"/>
+    <!-- Dipole field-line loops -->
+    <path class="ink-thin" stroke-width="0.8" d="M 0 -18 C  60 -90,  60  90, 0 18"/>
+    <path class="ink-thin" stroke-width="0.8" d="M 0 -18 C -60 -90, -60  90, 0 18"/>
+    <path class="ink-thin" stroke-width="0.8" d="M 0 -18 C  100 -150,  100  150, 0 18"/>
+    <path class="ink-thin" stroke-width="0.8" d="M 0 -18 C -100 -150, -100  150, 0 18"/>
+  </g>
 
-  <!-- Twin jets -->
-  <rect x="794" y="0"   width="12" height="500" fill="url(#jet)" opacity="0.85"/>
-  <rect x="794" y="500" width="12" height="500" fill="url(#jet)" opacity="0.85"/>
-
-  <!-- Central black hole -->
-  <circle cx="800" cy="500" r="36" fill="url(#bh)"/>
-  <circle cx="800" cy="500" r="14" fill="#000"/>
+  <!-- Faint, large-scale magnetic field arches from the central engine,
+       drawn as hairline curves only (no fills). -->
+  <g class="ink-thin" stroke-width="0.8">
+    <path d="M 800 500 C 1100 400, 1300 200, 1100 50"/>
+    <path d="M 800 500 C 1200 460, 1450 300, 1500 100"/>
+    <path d="M 800 500 C  500 400,  300 200,  500 50"/>
+    <path d="M 800 500 C  400 460,  150 300,  100 100"/>
+    <path d="M 800 500 C 1100 600, 1300 800, 1100 950"/>
+    <path d="M 800 500 C 1200 540, 1450 700, 1500 900"/>
+    <path d="M 800 500 C  500 600,  300 800,  500 950"/>
+    <path d="M 800 500 C  400 540,  150 700,  100 900"/>
+  </g>
 </svg>
