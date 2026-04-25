@@ -2,15 +2,10 @@
 layout: page
 permalink: /research/
 title: Research
-description: Research interests, projects, and current threads.
+description: An auto-generated overview of my research interests based on my publications.
 nav: true
 nav_order: 1
 ---
-
-I am a high-energy astrophysicist working at the interface of plasma physics,
-relativistic outflows, and multi-messenger astronomy. The four threads below
-are the ones I am actively pushing forward as a Simons SCEECS postdoctoral
-fellow at KIPAC.
 
 ---
 

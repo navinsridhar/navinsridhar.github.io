@@ -6,6 +6,11 @@
 
 .publications {
   margin-top: 2rem;
+  /* Continuous numbering across every {% bibliography %} call on the page.
+   * Each call emits its own <ol>, so we can't rely on the native start
+   * attribute — we drive the count with a CSS counter rooted on the
+   * publications container instead. */
+  counter-reset: pubcount;
 
   h1 {
     color: var(--global-theme-color);
@@ -38,6 +43,20 @@
 
     li {
       margin-bottom: 1rem;
+      counter-increment: pubcount;
+      position: relative;
+      padding-left: 2.5rem;
+
+      &::before {
+        content: counter(pubcount) ".";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2rem;
+        text-align: right;
+        color: var(--global-text-color-light);
+        font-variant-numeric: tabular-nums;
+      }
 
       .preview {
         display: inline-block;

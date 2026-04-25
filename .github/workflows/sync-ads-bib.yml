@@ -12,8 +12,10 @@ name: Sync papers.bib from ADS library
 #   papers.bib with `category = {pending}` (which the publications page
 #   does NOT render — so nothing shows up until the human moves it
 #   into first/secondthird/nth/books/atel and adjusts metadata).
-# * Opens a pull request when there is anything new. We deliberately
-#   avoid auto-merging so curated entries above are never overwritten.
+# * Commits the change directly to the default branch. Because the new
+#   entries are sandboxed under `category = {pending}` and not rendered
+#   by `/publications/`, this is safe — you'll see the addition in the
+#   commit log and can move it into the right section at your leisure.
 #
 # Required configuration
 # ----------------------
@@ -34,7 +36,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: sync-ads-bib
@@ -69,41 +70,23 @@ jobs:
             --library-id "${ADS_LIBRARY_ID}" \
             --bib _bibliography/papers.bib
 
-      - name: Open pull request if there are changes
+      - name: Commit & push if there are changes
         if: steps.sync.outputs.new_count != '' && steps.sync.outputs.new_count != '0'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "chore(bib): pull new entries from ADS library"
-          title: "chore(bib): ${{ steps.sync.outputs.new_count }} new ADS entr(y/ies) to categorize"
-          body: |
-            Automated sync from the public ADS library
-            (`${{ vars.ADS_LIBRARY_ID || 'AspXr7NhTAaWjzQzWm-Kuw' }}`).
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _bibliography/papers.bib
+          if git diff --cached --quiet -- _bibliography/papers.bib; then
+            echo "No change in papers.bib — skipping commit."
+            exit 0
+          fi
+          NEW_COUNT='${{ steps.sync.outputs.new_count }}'
+          git commit -m "chore(bib): pull ${NEW_COUNT} new entr$( [ "${NEW_COUNT}" = "1" ] && echo y || echo ies ) from ADS library
 
-            New bibcodes appended to `_bibliography/papers.bib` under a
-            **Pending categorization** block:
-
-            ```
-            ${{ steps.sync.outputs.new_bibcodes }}
-            ```
-
-            ### What you need to do
-
-            1. Move each new entry into the correct section
-               (Lead-author / Second–third-author / nth-author /
-               Books & white papers / Astronomical telegrams).
-            2. Replace `category = {pending}` with the right value
-               (`first` / `secondthird` / `nth` / `books` / `atel`).
-            3. Optionally clean up the ADS-exported entry: rename the
-               bib key to your `lastname<year><tag>` style, swap in the
-               `apj` / `mnras` / etc. journal macros, and add `selected
-               = {true}` if it should appear on the landing page.
-            4. Merge the PR.
-
-            Until merged, the new entries will not render on
-            `/publications/` because the page only queries the five
-            curated categories above.
-          branch: bot/sync-ads-bib
-          delete-branch: true
-          labels: |
-            automated
-            bibliography
+          Auto-appended under the 'Pending categorization' block.
+          Move into first/secondthird/nth/books/atel by hand and replace
+          category={pending} when ready."
+          # Pull-rebase first in case another workflow pushed something.
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+          git push

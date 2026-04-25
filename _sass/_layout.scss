@@ -4,11 +4,35 @@
 
 @use "variables" as v;
 
+/* Subtle research-themed background — accretion disk + jets + dipole field
+ * lines + sparse star field — applied to <html> so it sits underneath
+ * everything else. We layer a translucent overlay of the theme's bg-color
+ * on top of the SVG so the image only shows through at `1 - overlay-alpha`.
+ *
+ * Tune the alpha values below to make the background more or less visible.
+ *   alpha 0.86  -> ~14% bleed-through (subtle)
+ *   alpha 0.78  -> ~22% bleed-through (clearly visible)
+ *   alpha 0.92  -> ~ 8% bleed-through (whisper)
+ */
+
+html {
+  background-color: var(--global-bg-color);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("/assets/img/site-bg.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+}
+
+html[data-theme="dark"] {
+  background-image: linear-gradient(rgba(28, 28, 29, 0.86), rgba(28, 28, 29, 0.86)), url("/assets/img/site-bg.svg");
+}
+
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
-  background-color: var(--global-bg-color);
-  position: relative;
+  /* Transparent so the html-level research-themed background shows through. */
+  background-color: transparent;
 
   h1,
   h2,
@@ -18,30 +42,6 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
-
-  /* Subtle research-themed background — accretion disk + jets + dipole field
-   * lines + sparse star field. Pinned to the viewport, well behind everything,
-   * and rendered at very low opacity so it never competes with content. */
-  &::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background-image: url("/assets/img/site-bg.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.06;
-    pointer-events: none;
-  }
-}
-
-html[data-theme="dark"] body::before {
-  /* Dark mode: invert the SVG so the cool-blue ink reads as light cyan
-   * against the dark background, and lift opacity slightly. */
-  filter: invert(1) hue-rotate(180deg);
-  opacity: 0.08;
 }
 
 body.fixed-top-nav {
