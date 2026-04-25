@@ -24,31 +24,16 @@ and the Department of Physics at **Stanford University**, working with
 
 I am a **high-energy astrophysicist**. I build theoretical and numerical models of
 the most violent sources in the cosmos — accreting black holes, neutron-star mergers,
-magnetars, and the relativistic outflows they launch — and I connect those models
-to the X-ray, radio, and multi-messenger observations that we now routinely take.
-Current threads include:
+magnetars, and the relativistic outflows they launch — and connect those models
+to X-ray, radio, and multi-messenger observations. A high-level overview of my
+current threads lives on the [research](/research/) page.
 
-- **Black-hole coronae and jets** — particle acceleration by magnetic reconnection,
-  plasmoid-driven Comptonization, and the bulk motions that may power the
-  Comptonizing corona of accreting black holes.
-- **Fast Radio Bursts (FRBs)** — their progenitors (hyper-accreting X-ray binaries,
-  magnetars), their persistent radio counterparts, and the plasma-physics of the
-  environments in which they are produced.
-- **Multi-messenger precursors** of neutron-star mergers, including shock-powered
-  radio transients from accelerating relativistic binary winds.
-- **Strong electromagnetic waves in pair plasmas**, relevant to magnetar
-  magnetospheres and FRB emission mechanisms.
-
-I received my Ph.D. (2024) in Astrophysics from
-**Columbia University**, advised by
+I received my Ph.D. (2024) in Astrophysics from **Columbia University**, advised by
 [Lorenzo Sironi](https://user.astro.columbia.edu/~lsironi/) and
 [Brian D. Metzger](https://user.astro.columbia.edu/~bmetzger/). Before Columbia I
 was a BS-MS student at **IISER Bhopal**, with research stints at Caltech, TIFR
 Mumbai, the University of Alberta, IIAp Bangalore, and ISRO Bangalore.
 
 Outside of research, I care deeply about **teaching, mentoring, and science
-outreach**. I am an alumnus of the UC Santa Cruz ISEE
-Professional Development Program, Columbia's Center for Teaching & Learning
-advanced-track TDP, and have mentored nine students across four institutions.
-You can read more about this on the
-[teaching](/teaching/), [outreach](/outreach/), and [news](/news/) pages.
+outreach** — see the [teaching](/teaching/), [outreach](/outreach/), and
+[news](/news/) pages for more.

@@ -8,7 +8,9 @@
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 0.97;
+  backdrop-filter: saturate(180%) blur(6px);
+  -webkit-backdrop-filter: saturate(180%) blur(6px);
 }
 
 .navbar .dropdown-menu,
@@ -61,6 +63,7 @@
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    transition: color 0.15s ease;
 
     &:hover {
       color: var(--global-hover-color);

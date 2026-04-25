@@ -42,10 +42,11 @@
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
       counter-increment: pubcount;
       position: relative;
       padding-left: 2.5rem;
+      line-height: 1.55;
 
       &::before {
         content: counter(pubcount) ".";
@@ -121,11 +122,16 @@
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          border-radius: 4px;
+          padding-left: 0.85rem;
+          padding-right: 0.85rem;
+          padding-top: 0.2rem;
+          padding-bottom: 0.2rem;
           margin-left: 0;
+          font-size: 0.875rem;
+          transition:
+            color 0.15s ease,
+            border-color 0.15s ease;
 
           &:hover {
             color: var(--global-theme-color);

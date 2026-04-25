@@ -11,13 +11,13 @@
  *
  * Tune the alpha values below to make the background more or less visible.
  *   alpha 0.86  -> ~14% bleed-through (subtle)
- *   alpha 0.78  -> ~22% bleed-through (clearly visible)
+ *   alpha 0.72  -> ~28% bleed-through (clearly visible)
  *   alpha 0.92  -> ~ 8% bleed-through (whisper)
  */
 
 html {
   background-color: var(--global-bg-color);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("/assets/img/site-bg.svg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), url("/assets/img/site-bg.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -25,7 +25,7 @@ html {
 }
 
 html[data-theme="dark"] {
-  background-image: linear-gradient(rgba(28, 28, 29, 0.86), rgba(28, 28, 29, 0.86)), url("/assets/img/site-bg.svg");
+  background-image: linear-gradient(rgba(28, 28, 29, 0.72), rgba(28, 28, 29, 0.72)), url("/assets/img/site-bg.svg");
 }
 
 body {
