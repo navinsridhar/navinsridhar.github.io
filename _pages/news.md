@@ -4,7 +4,7 @@ permalink: /news/
 title: "News\u00A0&\u00A0Media"
 description: Press coverage, public-outreach appearances, and research highlights.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 ## Press & Media Coverage

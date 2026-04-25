@@ -8,12 +8,13 @@
 {% if s %}
   <div class="social">
     <div class="social-icons">
+      {%- comment -%}
+        Order (per site owner): email · Google Scholar · ADS · ORCID · LinkedIn · X
+        Other handles (arXiv, INSPIRE-HEP, GitHub, Mastodon, Bluesky, RSS) follow if enabled.
+      {%- endcomment -%}
+
       {% if s.email %}
         <a class="m-1" href="mailto:{{ s.email }}" title="email" rel="me"><i class="fas fa-envelope"></i></a>
-      {% endif %}
-
-      {% if s.orcid %}
-        <a class="m-1" href="https://orcid.org/{{ s.orcid }}" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a>
       {% endif %}
 
       {% if s.google_scholar_id %}
@@ -35,6 +36,22 @@
         ></a>
       {% endif %}
 
+      {% if s.orcid %}
+        <a class="m-1" href="https://orcid.org/{{ s.orcid }}" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a>
+      {% endif %}
+
+      {% if s.linkedin_username %}
+        <a class="m-1" href="https://linkedin.com/in/{{ s.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      {% endif %}
+
+      {% if s.twitter_username %}
+        <a class="m-1" href="https://x.com/{{ s.twitter_username }}" target="_blank" rel="noopener" title="X (Twitter)"
+          ><i class="fab fa-x-twitter"></i
+        ></a>
+      {% endif %}
+
       {% if s.arxiv %}
         <a class="m-1" href="https://arxiv.org/a/{{ s.arxiv }}.html" target="_blank" rel="noopener" title="arXiv"><i class="ai ai-arxiv"></i></a>
       {% endif %}
@@ -48,18 +65,6 @@
       {% if s.github_username %}
         <a class="m-1" href="https://github.com/{{ s.github_username }}" target="_blank" rel="noopener" title="GitHub"
           ><i class="fab fa-github"></i
-        ></a>
-      {% endif %}
-
-      {% if s.linkedin_username %}
-        <a class="m-1" href="https://linkedin.com/in/{{ s.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-      {% endif %}
-
-      {% if s.twitter_username %}
-        <a class="m-1" href="https://x.com/{{ s.twitter_username }}" target="_blank" rel="noopener" title="X (Twitter)"
-          ><i class="fab fa-x-twitter"></i
         ></a>
       {% endif %}
 

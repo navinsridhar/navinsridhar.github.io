@@ -19,21 +19,18 @@ social: true # includes social icons at the bottom of the page
 
 I am a **Simons Collaboration ([SCEECS](https://www.simonsceecs.com/)) postdoctoral fellow** at the [Kavli
 Institute for Particle Astrophysics and Cosmology (KIPAC)](https://kipac.stanford.edu/)
-and the Department of Physics at **Stanford University**, working with
-[Roger Blandford](https://profiles.stanford.edu/roger-blandford).
+and the [Department of Physics](https://physics.stanford.edu/) at **Stanford University**. I am supervised by [Prof. Roger D. Blandford](https://profiles.stanford.edu/roger-blandford).
 
 I am a **high-energy astrophysicist**. I build theoretical and numerical models of
-the most violent sources in the cosmos — accreting black holes, neutron-star mergers,
-magnetars, and the relativistic outflows they launch — and connect those models
-to X-ray, radio, and multi-messenger observations. A high-level overview of my
-current threads lives on the [research](/research/) page.
+some of the most violent sources in the cosmos — accreting black holes, neutron-star mergers, magnetars, and the relativistic outflows they launch — and connect those models to X-ray, radio, and multi-messenger observations. A high-level overview of my
+current research threads lives on the [research](/research/) page.
 
-I received my Ph.D. (2024) in Astrophysics from **Columbia University**, advised by
+I received my Ph.D. in Astrophysics from **Columbia University** (2024), advised by
 [Lorenzo Sironi](https://www.astro.columbia.edu/content/lorenzo-sironi) and
-[Brian D. Metzger](https://www.columbia.edu/~bdm2129/). Before Columbia I
-was a BS-MS student at **IISER Bhopal**, with research stints at Caltech, TIFR
+[Brian D. Metzger](https://www.columbia.edu/~bdm2129/). Before Columbia, I
+was a BS-MS student majoring in Physics at the **Indian Institute of Science Education & Research (IISER)** at Bhopal, with research stints at Caltech, TIFR
 Mumbai, the University of Alberta, IIAp Bangalore, and ISRO Bangalore.
 
 Outside of research, I care deeply about **teaching, mentoring, and science
 outreach** — see the [teaching](/teaching/), [outreach](/outreach/), and
-[news](/news/) pages for more.
+[news](/news/) pages for more. Outside of academic activities, I enjoy rock climbing, scuba diving, and playing all kind of sports.

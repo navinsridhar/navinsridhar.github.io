@@ -4,7 +4,7 @@ permalink: /outreach/
 title: Outreach
 description: Science outreach, mentoring, and professional service.
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ## Science Outreach
