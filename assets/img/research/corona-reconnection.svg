@@ -23,5 +23,4 @@
   <circle cx="295" cy="80" r="6" fill="#fdcb6e"/>
   <circle cx="305" cy="100" r="4" fill="#fdcb6e"/>
   <circle cx="298" cy="270" r="5" fill="#fdcb6e"/>
-  <text x="300" y="345" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" fill="#bbb">Plasmoid-mediated reconnection in the jet sheath</text>
 </svg>

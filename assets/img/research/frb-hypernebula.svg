@@ -26,5 +26,4 @@
   <circle cx="540" cy="90" r="1.5" fill="#fff"/>
   <circle cx="120" cy="300" r="1" fill="#fff"/>
   <circle cx="500" cy="280" r="1.2" fill="#fff"/>
-  <text x="300" y="345" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" fill="#bbb">Persistent radio nebula around an FRB engine</text>
 </svg>
