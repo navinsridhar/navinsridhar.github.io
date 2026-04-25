@@ -25,5 +25,4 @@
     <circle cx="460" cy="220" r="3"/>
     <circle cx="520" cy="170" r="3"/>
   </g>
-  <text x="300" y="345" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" fill="#bbb">Strong EM wave traversing an unmagnetized pair plasma</text>
 </svg>

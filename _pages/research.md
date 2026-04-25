@@ -19,18 +19,19 @@ nav_order: 1
     Hard X-ray emission from accreting stellar-mass and supermassive black holes is
     shaped by a hot, magnetized "corona" whose origin and geometry have been
     debated for decades. With <b>particle-in-cell simulations</b> of relativistic
-    magnetic reconnection in pair plasmas (Sridhar+ 2021,
+    magnetic reconnection in pair plasmas (<a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5625S">Sridhar+ 2021</a>,
     <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1301S">2023</a>) and
     <b>electron-ion plasmas</b> (Sridhar, Sironi &amp; Beloborodov 2023), my
     collaborators and I have shown that <b>plasmoid-mediated reconnection</b> can
     naturally produce the observed power-law tails up to several hundred keV. Our
-    most recent paper (Sridhar+ 2025 ApJ 979, 199) argues that the <b>bulk motion
-    of the jet sheath itself</b> can act as the elusive Comptonizing corona —
-    connecting the X-ray spectrum to the geometry of the jet base.
+    most recent paper (<a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S">Sridhar+ 2025 ApJ 979, 199</a>)
+    argues that the <b>bulk motion of the jet sheath itself</b> can act as the
+    elusive Comptonizing corona — connecting the X-ray spectrum to the geometry
+    of the jet base.
   </div>
 </div>
 
-> **Selected:** Sridhar+ 2025 ApJ 979 · Sridhar+ 2023 MNRAS 518 · Sridhar+ 2021 MNRAS 507
+> **Selected:** [Sridhar+ 2025 ApJ 979](https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S) · [Sridhar+ 2023 MNRAS 518](https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1301S) · [Sridhar+ 2021 MNRAS 507](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5625S)
 
 ---
 
@@ -44,15 +45,17 @@ nav_order: 1
     Where do FRBs come from? I have argued that a sub-population of repeating FRBs
     — including FRB 121102, 190520B, 190417A, 201124A — are powered by
     <b>hyper-accreting X-ray binaries</b> whose massive winds drive a luminous radio
-    "hypernebula" (Sridhar &amp; Metzger 2022). The same engine produces
-    <b>high-energy neutrinos</b> (Sridhar, Metzger &amp; Fang 2024) and provides a
-    natural explanation for the <b>periodic activity</b> seen in some sources
-    (Sridhar+ 2021 ApJ 917, 13). I co-author observational follow-ups with the EVN,
-    VLBI, and CHIME/FRB collaborations.
+    "hypernebula" (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...937....5S">Sridhar &amp; Metzger 2022</a>).
+    The same engine produces <b>high-energy neutrinos</b>
+    (<a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...960...74S">Sridhar, Metzger &amp; Fang 2024</a>)
+    and provides a natural explanation for the <b>periodic activity</b> seen in some sources
+    (<a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...917...13S">Sridhar+ 2021 ApJ 917, 13</a>).
+    I co-author observational follow-ups with the EVN, VLBI, and CHIME/FRB
+    collaborations.
   </div>
 </div>
 
-> **Selected:** Sridhar & Metzger 2022 · Sridhar, Metzger & Fang 2024 · Bhandari, Marcote, Sridhar+ 2023 · Eftekhari, Fong, Sridhar+ 2023
+> **Selected:** [Sridhar & Metzger 2022](https://ui.adsabs.harvard.edu/abs/2022ApJ...937....5S) · [Sridhar, Metzger & Fang 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...960...74S) · [Bhandari, Marcote, Sridhar+ 2023](https://ui.adsabs.harvard.edu/abs/2023ApJ...958L..19B) · [Eftekhari, Fong, Sridhar+ 2023](https://ui.adsabs.harvard.edu/abs/2023ApJ...958...66E)
 
 ---
 
@@ -64,13 +67,14 @@ nav_order: 1
   </div>
   <div class="col-md-8">
     Before two neutron stars coalesce, their <b>accelerating relativistic winds</b>
-    drive shocks that radiate at radio frequencies. Sridhar+ 2021 (MNRAS 501, 3184)
+    drive shocks that radiate at radio frequencies.
+    <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.3184S">Sridhar+ 2021 (MNRAS 501, 3184)</a>
     predicts an observable, shock-powered radio precursor — a complementary
     electromagnetic signature alongside gravitational waves and short GRBs.
   </div>
 </div>
 
-> **Selected:** Sridhar, Zrake, Metzger+ 2021 · Margalit, Beniamini, Sridhar, Metzger 2020
+> **Selected:** [Sridhar, Zrake, Metzger+ 2021](https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.3184S) · [Margalit, Beniamini, Sridhar, Metzger 2020](https://ui.adsabs.harvard.edu/abs/2020ApJ...899L..27M)
 
 ---
 

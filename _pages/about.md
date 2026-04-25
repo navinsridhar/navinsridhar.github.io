@@ -17,7 +17,7 @@ selected_papers: false # set true to show papers marked `selected={true}` on the
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a **Simons Collaboration (SCEECS) postdoctoral fellow** at the [Kavli
+I am a **Simons Collaboration ([SCEECS](https://www.simonsceecs.com/)) postdoctoral fellow** at the [Kavli
 Institute for Particle Astrophysics and Cosmology (KIPAC)](https://kipac.stanford.edu/)
 and the Department of Physics at **Stanford University**, working with
 [Roger Blandford](https://profiles.stanford.edu/roger-blandford).
@@ -29,8 +29,8 @@ to X-ray, radio, and multi-messenger observations. A high-level overview of my
 current threads lives on the [research](/research/) page.
 
 I received my Ph.D. (2024) in Astrophysics from **Columbia University**, advised by
-[Lorenzo Sironi](https://user.astro.columbia.edu/~lsironi/) and
-[Brian D. Metzger](https://user.astro.columbia.edu/~bmetzger/). Before Columbia I
+[Lorenzo Sironi](https://www.astro.columbia.edu/content/lorenzo-sironi) and
+[Brian D. Metzger](https://www.columbia.edu/~bdm2129/). Before Columbia I
 was a BS-MS student at **IISER Bhopal**, with research stints at Caltech, TIFR
 Mumbai, the University of Alberta, IIAp Bangalore, and ISRO Bangalore.
 

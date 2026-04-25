@@ -31,15 +31,11 @@
   }
 
   function init() {
-    var togglers = document.querySelectorAll(
-      '.navbar-toggler[data-target], .navbar-toggler[data-bs-target]'
-    );
+    var togglers = document.querySelectorAll(".navbar-toggler[data-target], .navbar-toggler[data-bs-target]");
     Array.prototype.forEach.call(togglers, function (button) {
       // Skip if Bootstrap's own JS is already wired up — but we want our
       // listener to run regardless, since BS-without-jQuery is a no-op.
-      var sel =
-        button.getAttribute("data-target") ||
-        button.getAttribute("data-bs-target");
+      var sel = button.getAttribute("data-target") || button.getAttribute("data-bs-target");
       if (!sel) return;
       button.addEventListener("click", function (ev) {
         ev.preventDefault();

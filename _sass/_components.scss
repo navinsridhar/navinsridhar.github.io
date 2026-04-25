@@ -72,7 +72,9 @@ ul.task-list input[type="checkbox"] {
     /* Subtle hairline frame + soft shadow for a polished, elegant look. */
     border-radius: 6px;
     border: 1px solid var(--global-divider-color);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 14px rgba(0, 0, 0, 0.04);
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.06),
+      0 4px 14px rgba(0, 0, 0, 0.04);
   }
 
   .more-info {
