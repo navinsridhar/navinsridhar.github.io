@@ -37,7 +37,7 @@ theme_color: "#b509ac"
 # RSS feed / GA
 # -----------------------------------------------------------------------------
 
-rss_icon: true
+rss_icon: false
 google_analytics: # e.g. G-XXXXXXXXXX (set later)
 
 # -----------------------------------------------------------------------------
@@ -62,7 +62,7 @@ enable_darkmode: true
 enable_progressbar: true
 
 # Enable search
-search_enabled: true
+search_enabled: false
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -114,7 +114,7 @@ scholar:
   details_link: Details
   query: "@*"
 
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, category]
 max_author_limit: 3
 more_authors_animation_delay: 10
 bib_search: true
