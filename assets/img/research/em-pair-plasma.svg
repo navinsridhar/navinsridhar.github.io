@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-label="EM-wave / pair-plasma placeholder">
+  <rect width="600" height="360" fill="#0f0f1e"/>
+  <!-- propagating wave packets -->
+  <g stroke-width="2" fill="none">
+    <path d="M0 110 Q 50 60 100 110 T 200 110 T 300 110 T 400 110 T 500 110 T 600 110" stroke="#fdcb6e" opacity="0.85"/>
+    <path d="M0 180 Q 50 130 100 180 T 200 180 T 300 180 T 400 180 T 500 180 T 600 180" stroke="#74b9ff" opacity="0.85"/>
+    <path d="M0 250 Q 50 200 100 250 T 200 250 T 300 250 T 400 250 T 500 250 T 600 250" stroke="#a29bfe" opacity="0.7"/>
+  </g>
+  <!-- pair plasma dots -->
+  <g fill="#ff6b6b">
+    <circle cx="120" cy="200" r="3"/>
+    <circle cx="180" cy="160" r="3"/>
+    <circle cx="240" cy="220" r="3"/>
+    <circle cx="320" cy="170" r="3"/>
+    <circle cx="380" cy="210" r="3"/>
+    <circle cx="440" cy="180" r="3"/>
+    <circle cx="500" cy="220" r="3"/>
+  </g>
+  <g fill="#74b9ff">
+    <circle cx="140" cy="170" r="3"/>
+    <circle cx="200" cy="220" r="3"/>
+    <circle cx="260" cy="180" r="3"/>
+    <circle cx="340" cy="220" r="3"/>
+    <circle cx="400" cy="170" r="3"/>
+    <circle cx="460" cy="220" r="3"/>
+    <circle cx="520" cy="170" r="3"/>
+  </g>
+  <text x="300" y="345" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" fill="#bbb">Strong EM wave traversing an unmagnetized pair plasma</text>
+</svg>
