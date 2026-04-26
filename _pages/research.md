@@ -9,7 +9,7 @@ nav_order: 1
 
 ---
 
-## 1 · Black-hole coronae &nbsp;·&nbsp; reconnection &nbsp;·&nbsp; Comptonization
+## 1 · Black-hole coronae
 
 <div class="row align-items-center mb-3">
   <div class="col-md-4 mb-3 mb-md-0">
@@ -17,17 +17,17 @@ nav_order: 1
   </div>
   <div class="col-md-8">
     Hard X-ray emission from accreting stellar-mass and supermassive black holes is
-    shaped by a hot, magnetized "corona" whose origin and geometry have been
-    debated for decades. With <b>particle-in-cell simulations</b> of relativistic
+    shaped by a "corona" whose origin and geometry have been
+    debated for decades. With <b>particle-in-cell simulations</b> of radiative relativistic
     magnetic reconnection in pair plasmas (<a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5625S">Sridhar+ 2021</a>,
     <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1301S">2023</a>) and
     <b>electron-ion plasmas</b> (Sridhar, Sironi &amp; Beloborodov 2023), my
     collaborators and I have shown that <b>plasmoid-mediated reconnection</b> can
-    naturally produce the observed power-law tails up to several hundred keV. Our
+    naturally produce the observed X-ray power-law tails up to several hundred keV. Our
     most recent paper (<a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S">Sridhar+ 2025 ApJ 979, 199</a>)
     argues that the <b>bulk motion of the jet sheath itself</b> can act as the
     elusive Comptonizing corona — connecting the X-ray spectrum to the geometry
-    of the jet base.
+    of the jet sheath.
   </div>
 </div>
 
@@ -35,7 +35,7 @@ nav_order: 1
 
 ---
 
-## 2 · Fast Radio Bursts &nbsp;·&nbsp; persistent radio sources &nbsp;·&nbsp; hypernebulae
+## 2 · Fast Radio Bursts &nbsp;·&nbsp; Persistent Radio Sources
 
 <div class="row align-items-center mb-3">
   <div class="col-md-4 mb-3 mb-md-0">
@@ -43,14 +43,14 @@ nav_order: 1
   </div>
   <div class="col-md-8">
     Where do FRBs come from? I have argued that a sub-population of repeating FRBs
-    — including FRB 121102, 190520B, 190417A, 201124A — are powered by
+    — including FRB 121102, 190520B, 190417A, 201124A — are powered by jetted
     <b>hyper-accreting X-ray binaries</b> whose massive winds drive a luminous radio
     "hypernebula" (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...937....5S">Sridhar &amp; Metzger 2022</a>).
     The same engine produces <b>high-energy neutrinos</b>
     (<a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...960...74S">Sridhar, Metzger &amp; Fang 2024</a>)
     and provides a natural explanation for the <b>periodic activity</b> seen in some sources
     (<a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...917...13S">Sridhar+ 2021 ApJ 917, 13</a>).
-    I co-author observational follow-ups with the EVN, VLBI, and CHIME/FRB
+    I also co-author observational follow-up papers with the EVN, VLBI, and CHIME/FRB
     collaborations.
   </div>
 </div>
@@ -85,13 +85,13 @@ nav_order: 1
     {% include figure.liquid path="assets/img/research/em-pair-plasma.svg" class="img-fluid rounded z-depth-1" zoomable=true alt="Strong EM wave traversing an unmagnetized pair plasma" %}
   </div>
   <div class="col-md-8">
-    What does an FRB pulse actually do as it propagates out of a magnetar
-    magnetosphere? In Sridhar, Sobacchi, Sironi+ 2026
+    How do coherent, high brightness temperature radio pulses such as Fast Radio Bursts, giant radio pulses propagate out of the
+    magnetosphere of neutron stars? In Sridhar, Sobacchi, Sironi+ 2026
     (<a href="https://arxiv.org/abs/2604.11698">arXiv:2604.11698</a>) we treat the
     <b>nonlinear interaction of strong electromagnetic waves with unmagnetized
     pair plasma in the relativistic regime</b> with first-principles PIC
     simulations. The results have direct implications for which FRB emission
-    mechanisms can survive propagation.
+    mechanisms can survive propagation, and also for next generation multi-petawatt laser-plasma interaction experiments.
   </div>
 </div>
 
