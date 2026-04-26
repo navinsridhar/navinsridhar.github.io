@@ -12,6 +12,39 @@
    * publications container instead. */
   counter-reset: pubcount;
 
+  /* Top-of-page profile links (NASA ADS, Google Scholar, ORCiD) — match
+   * the bordered-button styling we use on each publication entry's links,
+   * since by default `.btn` ships unstyled in this theme. */
+  .profile-links {
+    margin: 0.25rem 0 1.25rem 0;
+
+    a.btn {
+      display: inline-block;
+      color: var(--global-text-color);
+      background-color: transparent;
+      border: 1px solid var(--global-text-color);
+      border-radius: 4px;
+      padding: 0.25rem 0.85rem;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.4;
+      text-decoration: none;
+      transition:
+        color 0.15s ease,
+        border-color 0.15s ease,
+        background-color 0.15s ease;
+
+      &:hover,
+      &:focus {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+        text-decoration: none;
+      }
+    }
+  }
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;

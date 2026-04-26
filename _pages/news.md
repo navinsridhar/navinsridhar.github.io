@@ -7,8 +7,6 @@ nav: true
 nav_order: 6
 ---
 
-## Press & Media Coverage
-
 ### 2023
 
 - **Super sharp images with EVN reveal another Fast Radio Burst coming from a Hypernebula.**

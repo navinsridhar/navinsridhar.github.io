@@ -54,7 +54,7 @@ Highlights:
 **At Stanford University (KIPAC)**
 
 - Postbaccalaureate program admissions committee (2025)
-- Ph.D. program admissions committee (2024–2025)
+- PhD program admissions committee (2024–2025)
 - Started the weekly **KIPAC Compact Objects Group meetings** (Oct 2024–)
 
 **At Columbia University**

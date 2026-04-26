@@ -38,18 +38,17 @@ contribute, today or in the future, to informing policy — and is, in turn,
 affected by the policy decisions that get made from the local level all the
 way up to Capitol Hill.
 
-### What we did at SciPol4Sci
+### What I did at the SciPol4Sci course
 
 **Science Policy for Scientists** was designed to help graduate students in
 the sciences and engineering learn directly from professionals working at the
 interface of research and government. Each Monday for eight consecutive weeks
-(Feb 6 – Mar 27, 2023), we brought in an outside speaker for a one-hour
-seminar, immediately followed by an informal **catered lunch discussion** in
+(Feb 6 – Mar 27, 2023), we brought in an expert speaker for a one hour
+seminar, immediately followed by an hour of discussions over a catered lunch in
 which the audience could ask questions about career paths, working culture,
 and concrete entry points into policy work. Sessions ran in person at
 Columbia (Pupin 1402) and were simulcast on Zoom for participants from
-Columbia, NYU, CUNY, and other NYC-area institutions; recordings of most
-seminars are linked in the schedule below.
+across the globe; recordings of most seminars are publically made available in the [course website](https://scipol4sci.wordpress.com/).
 
 The eight weeks were curated to span the full spectrum of "science for
 policy" and "policy for science":

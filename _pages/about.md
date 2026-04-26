@@ -25,7 +25,7 @@ I am a **high-energy astrophysicist**. I build theoretical and numerical models 
 some of the most violent sources in the cosmos — accreting black holes, neutron-star mergers, magnetars, and the relativistic outflows they launch — and connect those models to X-ray, radio, and multi-messenger observations. A high-level overview of my
 current research threads lives on the [research](/research/) page.
 
-I received my Ph.D. in Astrophysics from **Columbia University** (2024), advised by
+I received my PhD in Astrophysics from **Columbia University** (2024), advised by
 [Lorenzo Sironi](https://www.astro.columbia.edu/content/lorenzo-sironi) and
 [Brian D. Metzger](https://www.columbia.edu/~bdm2129/). Before Columbia, I
 was a BS-MS student majoring in Physics at the **Indian Institute of Science Education & Research (IISER)** at Bhopal, with research stints at Caltech, TIFR
