@@ -35,7 +35,7 @@ publication.
 
 <div class="row align-items-center mb-4">
   <div class="col-md-7 mb-3 mb-md-0">
-    {% include video.liquid path="https://www.youtube.com/embed/REPLACE_VIDEO_ID_2" class="img-fluid rounded z-depth-1" width="100%" height="360" title="Reconnection in electron-ion plasma" %}
+    {% include video.liquid path="https://www.youtube.com/watch?v=cMmt8FYJI3o" class="img-fluid rounded z-depth-1" width="100%" height="360" title="Reconnection in electron-ion plasma" %}
   </div>
   <div class="col-md-5">
     Particle-in-cell simulation of relativistic reconnection in an
