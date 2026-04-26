@@ -29,22 +29,56 @@ rest of my work. The original site is at
 scientific results to inform decisions in matters not directly about science —
 e.g. using the consensus on anthropogenic climate change to design legislation
 that promotes renewable energy. **"Policy for science"** shapes the rules,
-guidelines, and laws that govern how research is done — e.g. budget bills that
-allocate federal funding to NASA or NOAA.
+guidelines, and laws that govern how research is done — e.g. budget bills
+that allocate federal funding to NASA or NOAA.
 
 Science policy in both senses has grown much more complex since World War II.
 Practically every graduate student in the sciences is now in a position to
 contribute, today or in the future, to informing policy — and is, in turn,
-affected by the policy decisions that get made from the local level up to
-Capitol Hill.
+affected by the policy decisions that get made from the local level all the
+way up to Capitol Hill.
 
-**Science Policy for Scientists** was designed to help graduate students in the
-sciences learn from professionals across the field over eight weekly lectures
-and lunch discussions. Topics included how the US federal government allocates
-money for science, how scientists can engage New York City government, how
-scientific disciplines decide their collective research priorities, how federal
-policy hinders international scientific collaboration, and what types of
-policy-side careers exist for scientists.
+### What we did at SciPol4Sci
+
+**Science Policy for Scientists** was designed to help graduate students in
+the sciences and engineering learn directly from professionals working at the
+interface of research and government. Each Monday for eight consecutive weeks
+(Feb 6 – Mar 27, 2023), we brought in an outside speaker for a one-hour
+seminar, immediately followed by an informal **catered lunch discussion** in
+which the audience could ask questions about career paths, working culture,
+and concrete entry points into policy work. Sessions ran in person at
+Columbia (Pupin 1402) and were simulcast on Zoom for participants from
+Columbia, NYU, CUNY, and other NYC-area institutions; recordings of most
+seminars are linked in the schedule below.
+
+The eight weeks were curated to span the full spectrum of "science for
+policy" and "policy for science":
+
+- **Federal scaffolding** of US science — how the executive branch sets
+  research priorities, how Congress funds agencies, and how AAAS and AIP
+  translate science for policymakers.
+- **Local engagement** — channels through which working scientists can
+  inform New York City and state government on issues from public health
+  to environmental monitoring.
+- **Global security and arms control** — the role of physicists in
+  nuclear-threat-reduction work, treaty verification, and dual-use
+  research export controls.
+- **Environmental and climate policy** — how disciplinary research
+  communities coordinate to inform climate, oceans, and biodiversity
+  policy.
+- **Science, equity, and OSTP** — recent White House efforts to embed
+  equity, accessibility, and open science in federally funded research.
+- **Immigration policy and international collaboration** — how visa
+  rules, export controls, and bilateral agreements shape who gets to do
+  science in the US, and what costs that imposes on the field.
+- **Career launching pads** — fellowships (AAAS S&TPF, Mirzayan, MLK,
+  Schmidt Science) and concrete first jobs in agencies, NGOs, and
+  industry.
+
+A core deliverable of the series, beyond the live lectures, is a
+**curated [resources page](https://scipol4sci.wordpress.com/science-policy-resources/)** —
+fellowships, working groups, key reports, and reading lists — that
+graduate students can keep coming back to long after the series ended.
 
 ---
 
@@ -75,25 +109,12 @@ Sebastien Philippe's seminar was captured.
 ## Team
 
 I organized SciPol4Sci as a [National Osterbrock Leadership
-fellow](https://aas.org/nolp), with the help of an extraordinary team of
-graduate students at Columbia:
-
-- **[Ingrid Izaguirre](https://www.linkedin.com/in/ingrid-izaguirre/)** — MA/MPhil
-  in Earth and Environmental Sciences, Columbia (paleoclimatology &
-  geochemistry); science communicator and writer for AGU's Geobites.
-- **Jen Mead** — PhD candidate in Astronomy, Columbia, working on chemical
-  evolution and the first stars; particularly interested in space policy.
-- **Alan Garcia** — PhD student in Earth and Environmental Sciences, Columbia,
-  working on climate forecasting and services.
-- **Bárbara Cruvinel Santiago** — Physics PhD candidate, Columbia (NASA FINESST
-  fellow); inaugural Next-Generation Fellow of the Physicists Coalition for
-  Nuclear Threat Reduction; APS 5 Sigma Physicist Award (2021).
-- **Patrick Orenstein** — PhD candidate in Applied Physics & Applied
-  Mathematics, Columbia, focused on tropical meteorology and extreme weather
-  (CBO Summer Associate, 2022).
-- **Alex Parsells** — PhD student in Earth and Environmental Sciences, Columbia,
-  working on tropical atmospheric dynamics.
-- **Shifra Mandel** and **Trinish Chatterjee** — additional team members.
+fellow](https://aas.org/nolp), with a wonderful team of Columbia graduate
+students across astronomy, physics, and the earth & environmental sciences:
+[Ingrid Izaguirre](https://www.linkedin.com/in/ingrid-izaguirre/),
+**Jen Mead**, **Alan Garcia**, **Bárbara Cruvinel Santiago**,
+**Patrick Orenstein**, **Alex Parsells**, **Shifra Mandel**, and
+**Trinish Chatterjee**.
 
 ---
 
