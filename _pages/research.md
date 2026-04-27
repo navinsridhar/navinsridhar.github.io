@@ -19,19 +19,16 @@ nav_order: 1
     Hard X-ray emission from accreting stellar-mass and supermassive black holes is
     shaped by a "corona" whose origin and geometry have been
     debated for decades. With <b>particle-in-cell simulations</b> of radiative relativistic
-    magnetic reconnection in pair plasmas (<a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5625S">Sridhar+ 2021</a>,
-    <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1301S">2023</a>) and
-    <b>electron-ion plasmas</b> (Sridhar, Sironi &amp; Beloborodov 2023), my
+    magnetic reconnection in pair plasmas [1] and electron-ion plasmas [2], my
     collaborators and I have shown that <b>plasmoid-mediated reconnection</b> can
     naturally produce the observed X-ray power-law tails up to several hundred keV. Our
-    most recent paper (<a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S">Sridhar+ 2025 ApJ 979, 199</a>)
-    argues that the <b>bulk motion of the jet sheath itself</b> can act as the
+    most recent paper [3] argues that the <b>bulk motion of the jet sheath itself</b> can act as the
     elusive Comptonizing corona — connecting the X-ray spectrum to the geometry
     of the jet sheath.
   </div>
 </div>
 
-> **Selected:** [Sridhar+ 2025 ApJ 979](https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S) · [Sridhar+ 2023 MNRAS 518](https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1301S) · [Sridhar+ 2021 MNRAS 507](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5625S)
+> **Selected papers:** [1] [Sridhar+ 2021 MNRAS 507](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5625S) · [2] [Sridhar+ 2023 MNRAS 518](https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1301S) · [3] [Sridhar+ 2025 ApJ 979](https://ui.adsabs.harvard.edu/abs/2025ApJ...979..199S)
 
 ---
 
@@ -44,18 +41,16 @@ nav_order: 1
   <div class="col-md-8">
     Where do FRBs come from? I have argued that a sub-population of repeating FRBs
     — including FRB 121102, 190520B, 190417A, 201124A — are powered by jetted
-    <b>hyper-accreting X-ray binaries</b> whose massive winds drive a luminous radio
-    "hypernebula" (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...937....5S">Sridhar &amp; Metzger 2022</a>).
-    The same engine produces <b>high-energy neutrinos</b>
-    (<a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...960...74S">Sridhar, Metzger &amp; Fang 2024</a>)
-    and provides a natural explanation for the <b>periodic activity</b> seen in some sources
-    (<a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...917...13S">Sridhar+ 2021 ApJ 917, 13</a>).
-    I also co-author observational follow-up papers with the EVN, VLBI, and CHIME/FRB
+    <b>hyper-accreting X-ray binaries</b> [1] whose massive winds drive a luminous radio
+    "hypernebula" around them [2].
+    The same engine produces <b>high-energy neutrinos</b> [3]
+    and provides a natural explanation for the <b>periodic activity</b> seen in some sources.
+    Some of these models have also be applied to several observational follow-up papers with the EVN, VLBI, and CHIME/FRB
     collaborations.
   </div>
 </div>
 
-> **Selected:** [Sridhar & Metzger 2022](https://ui.adsabs.harvard.edu/abs/2022ApJ...937....5S) · [Sridhar, Metzger & Fang 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...960...74S) · [Bhandari, Marcote, Sridhar+ 2023](https://ui.adsabs.harvard.edu/abs/2023ApJ...958L..19B) · [Eftekhari, Fong, Sridhar+ 2023](https://ui.adsabs.harvard.edu/abs/2023ApJ...958...66E)
+> **Selected papers:** [1] [Sridhar, Metzger, Beniamini+ 2021](https://ui.adsabs.harvard.edu/abs/2021ApJ...917...13S) [2] · [Sridhar & Metzger 2022](https://ui.adsabs.harvard.edu/abs/2022ApJ...937....5S) · [3] [Sridhar, Metzger & Fang 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...960...74S) · [Bhandari, Marcote, Sridhar+ 2023](https://ui.adsabs.harvard.edu/abs/2023ApJ...958L..19B) · [Eftekhari, Fong, Sridhar+ 2023](https://ui.adsabs.harvard.edu/abs/2023ApJ...958...66E) · [Margalit, Beniamini, Sridhar, Metzger 2020](https://ui.adsabs.harvard.edu/abs/2020ApJ...899L..27M)
 
 ---
 
@@ -67,14 +62,11 @@ nav_order: 1
   </div>
   <div class="col-md-8">
     Before two neutron stars coalesce, their <b>accelerating relativistic winds</b>
-    drive shocks that radiate at radio frequencies.
-    <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.3184S">Sridhar+ 2021 (MNRAS 501, 3184)</a>
-    predicts an observable, shock-powered radio precursor — a complementary
-    electromagnetic signature alongside gravitational waves and short GRBs.
+    drive shocks that radiate at radio frequencies. Our work predicts an observable, shock-powered radio precursor — a complementary electromagnetic signature alongside gravitational waves and short GRBs [1].
   </div>
 </div>
 
-> **Selected:** [Sridhar, Zrake, Metzger+ 2021](https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.3184S) · [Margalit, Beniamini, Sridhar, Metzger 2020](https://ui.adsabs.harvard.edu/abs/2020ApJ...899L..27M)
+> **Selected papers:** [1] [Sridhar, Zrake, Metzger+ 2021](https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.3184S)
 
 ---
 
@@ -86,21 +78,21 @@ nav_order: 1
   </div>
   <div class="col-md-8">
     How do coherent, high brightness temperature radio pulses such as Fast Radio Bursts, giant radio pulses propagate out of the
-    magnetosphere of neutron stars? In Sridhar, Sobacchi, Sironi+ 2026
-    (<a href="https://arxiv.org/abs/2604.11698">arXiv:2604.11698</a>) we treat the
+    magnetosphere of neutron stars? We treat the
     <b>nonlinear interaction of strong electromagnetic waves with unmagnetized
-    pair plasma in the relativistic regime</b> with first-principles PIC
-    simulations. The results have direct implications for which FRB emission
+    pair plasma in the relativistic regime</b> with analytical modeling and first-principles PIC
+    simulations [1]. The results have direct implications for which FRB emission
     mechanisms can survive propagation, and also for next generation multi-petawatt laser-plasma interaction experiments.
   </div>
 </div>
+
+> **Selected papers:** [1] [Sridhar, Sobacchi, Sironi+ 2026](https://arxiv.org/abs/2604.11698)
 
 ---
 
 ## Working Groups & Collaborations
 
 - **NewAthena** science working group (2025–)
-- **AXIS** (Advanced X-ray Imaging Satellite) science working group (2022–)
-- **HEX-P** (High-Energy X-ray Probe) science working group (2022–)
-- **PRIMA** (PRobe far-IR Mission for Astrophysics) science working group (2025–)
+- **AXIS** (Advanced X-ray Imaging Satellite) science working group (2022–2026)
+- **HEX-P** (High-Energy X-ray Probe) science working group (2022–2025)
 - **Simons SCEECS** — Simons Collaboration on Extreme Electrodynamics of Compact Sources (affiliated scientist 2023–2027)

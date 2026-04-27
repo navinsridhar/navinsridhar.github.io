@@ -7,6 +7,22 @@ nav: true
 nav_order: 5
 ---
 
+
+## About science policy
+
+"Science policy" has two related meanings. **"Science for policy"** uses
+scientific results to inform decisions in matters not directly about science —
+e.g. using the consensus on anthropogenic climate change to design legislation
+that promotes renewable energy. **"Policy for science"** shapes the rules,
+guidelines, and laws that govern how research is done — e.g. budget bills
+that allocate federal funding to NASA or NOAA.
+
+Practically every scientist is now in a position to
+contribute, today or in the future, to informing policy — and is, in turn,
+affected by the policy decisions that get made from the local level all the
+way up to Capitol Hill.
+
+
 ## Science Policy for Scientists
 
 While at Columbia, I organized **[Science Policy for Scientists](https://scipol4sci.wordpress.com/)**
@@ -17,30 +33,7 @@ Astronomy](https://www.astro.columbia.edu/), the [American Astronomical Society'
 National Osterbrock Leadership Program](https://aas.org/nolp), and the
 [Arts & Sciences Graduate Council](https://council.gsas.columbia.edu/).
 
-The page below mirrors the SciPol4Sci site so its content lives alongside the
-rest of my work. The original site is at
-<https://scipol4sci.wordpress.com/>.
-
----
-
-## About science policy and SciPol4Sci
-
-"Science policy" has two related meanings. **"Science for policy"** uses
-scientific results to inform decisions in matters not directly about science —
-e.g. using the consensus on anthropogenic climate change to design legislation
-that promotes renewable energy. **"Policy for science"** shapes the rules,
-guidelines, and laws that govern how research is done — e.g. budget bills
-that allocate federal funding to NASA or NOAA.
-
-Science policy in both senses has grown much more complex since World War II.
-Practically every graduate student in the sciences is now in a position to
-contribute, today or in the future, to informing policy — and is, in turn,
-affected by the policy decisions that get made from the local level all the
-way up to Capitol Hill.
-
-### What I did at the SciPol4Sci course
-
-**Science Policy for Scientists** was designed to help graduate students in
+SciPol4Sci was designed to help graduate students in
 the sciences and engineering learn directly from professionals working at the
 interface of research and government. Each Monday for eight consecutive weeks
 (Feb 6 – Mar 27, 2023), we brought in an expert speaker for a one hour

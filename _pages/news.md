@@ -48,13 +48,13 @@ nav_order: 6
 
 <h3>2025</h3>
 <ul>
-  <li><b>April 2025</b> — Public outreach talk, <i>KIPAC community day</i>, Stanford University.</li>
+  <li><b>April 2025</b> — The enigma of Fast Radio Bursts, <i>KIPAC community day</i>, Stanford University.</li>
   <li><b>Jan 2025</b> — "A research career in astrophysics", undergraduate audience, IISER Bhopal.</li>
 </ul>
 
 <h3>2024</h3>
 <ul>
-  <li><b>Dec 2024</b> — Public-outreach talk, KIPAC, Stanford University.</li>
+  <li><b>Dec 2024</b> — The enigma of Fast Radio Bursts, KIPAC, Stanford University.</li>
 </ul>
 
 <h3>2022</h3>

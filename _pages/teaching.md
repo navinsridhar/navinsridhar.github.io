@@ -136,14 +136,14 @@ Total: **9 students**
 | Student                    | Role / Institution                       | Period      | Outcome                               |
 | -------------------------- | ---------------------------------------- | ----------- | ------------------------------------- |
 | **Ningyue Fan**            | PhD student, Stanford                    | Fall 2025–  |                                       |
-| **Christopher Farias**     | undergraduate, San Diego State U.        | Summer 2025 |                                       |
-| **Kohki Uno**              | PhD student, Kyoto U.                    | Summer 2024 | 1 paper; now postdoc at Columbia      |
+| **Christopher Farias**     | Undergraduate, San Diego State U.        | Summer 2025 |                                       |
+| **Dr. Kohki Uno**          | PhD student, Kyoto U.                    | Summer 2024 | 1 paper; now postdoc at Columbia      |
 | **Arnab Kundu**            | Masters thesis, IISER Kolkata            | 2021–2022   |                                       |
-| **Akash Vani**             | Pune U.                                  | 2019–2020   | MSc Heidelberg → PhD at MPA Garching  |
-| **Sanya Gupta**            | Undergraduate research, Columbia         | 2022–2025   | 2 papers; now PhD student at Stanford |
+| **Akash Vani**             | Pune University                          | 2019–2020   | MSc Heidelberg → PhD at MPA Garching  |
+| **Sanya Gupta**            | Undergraduate, Columbia                  | 2022–2025   | 2 papers; now PhD student at Stanford |
 | **Shifra Mandel**          | Graduate mentor-mentee program, Columbia | 2021–2022   |                                       |
 | **Shuhan Zhang**           | WISC undergraduate program, Columbia     | 2021        | Now PhD student at UC San Diego       |
-| **Bhairavi Chandrasekhar** | Undergraduate summer intern, Columbia    | 2020        |                                       |
+| **Bhairavi Chandrasekhar** | Undergraduate, Columbia                  | Summer 2020 |                                       |
 
 ---
 
