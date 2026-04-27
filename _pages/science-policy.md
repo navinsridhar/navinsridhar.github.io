@@ -7,7 +7,6 @@ nav: true
 nav_order: 5
 ---
 
-
 ## About science policy
 
 "Science policy" has two related meanings. **"Science for policy"** uses
@@ -21,7 +20,6 @@ Practically every scientist is now in a position to
 contribute, today or in the future, to informing policy — and is, in turn,
 affected by the policy decisions that get made from the local level all the
 way up to Capitol Hill.
-
 
 ## Science Policy for Scientists
 
