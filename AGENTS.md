@@ -32,7 +32,12 @@ docker compose down
 
 ### Pre-Commit Checklist
 
-Before every commit, you **must** run these steps:
+CI now **auto-formats** on every push to `main`/`master` via
+`.github/workflows/prettier.yml`: a successful push will be followed by an
+automatic `style: auto-format with Prettier [skip ci]` commit if anything
+needed reformatting, so you can no longer have a "Prettier check failed"
+error on a direct push. Pull-request CI still _checks_ formatting (without
+auto-committing), so PR authors should still run Prettier locally:
 
 1.  **Format Code:**
     ```bash
