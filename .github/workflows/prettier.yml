@@ -10,9 +10,15 @@ on:
       - master
       - main
 
+permissions:
+  contents: write
+
 jobs:
+  # On pull requests we only check formatting (so authors see the diff in CI
+  # and can fix it on their branch before merge). The diff artifact is still
+  # uploaded for convenience.
   check:
-    # available images: https://github.com/actions/runner-images#available-images
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -25,7 +31,6 @@ jobs:
         id: prettier
         run: npx prettier . --check
       - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
         run: |
           npx prettier . --write
@@ -46,3 +51,35 @@ jobs:
         with:
           event-type: prettier-failed-on-pr
           client-payload: '{"pr_number": "${{ github.event.number }}", "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url }}", "run_id": "${{ github.run_id }}"}'
+
+  # On direct pushes to main/master we auto-format and commit the fix back,
+  # so the workflow no longer fails on small whitespace / escape-character
+  # issues (e.g. the recurring CUSTOMIZE.md table-of-contents underscore
+  # escape). The follow-up commit uses [skip ci] to avoid recursion.
+  autoformat:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+        with:
+          # Need full history + a token that can push back.
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+      - name: Install Prettier 💾
+        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+      - name: Prettier Auto-Format ✨
+        run: npx prettier . --write
+      - name: Commit & push if changed 📤
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "style: auto-format with Prettier [skip ci]"
+            git push
+          else
+            echo "No formatting changes — already clean."
+          fi

@@ -3,7 +3,7 @@ layout: page
 permalink: /outreach/
 title: Outreach
 description: Science outreach, mentoring, and professional service.
-nav: true
+nav: false
 nav_order: 7
 ---
 
@@ -26,21 +26,6 @@ nav_order: 7
 9. **Science with space-based X-ray telescopes** — high-school lecture at
    _Frontiers of Science_, TIFR Mumbai's annual outreach program (Nov 2017).
 10. **GMRT tour** for TIFR Visiting Summer Research students (Jun 2016).
-
----
-
-## Mentoring
-
-I have mentored **9 students** across four institutions. See the
-[teaching](/teaching/) page for the full list and for my mentoring philosophy.
-Highlights:
-
-- **Sanya Gupta** (Columbia undergraduate, 2022–2025 → PhD, Stanford):
-  two first-author papers on reconnection in black-hole coronae.
-- **Kohki Uno** (PhD student, Kyoto → postdoc, Columbia): one paper on radio
-  hypernebulae from mass-transferring massive binaries.
-- **Shuhan Zhang** (WISC undergraduate program, Columbia → PhD, UC San Diego).
-- **Akash Vani** (Pune → MSc Heidelberg → PhD, MPA Garching).
 
 ---
 

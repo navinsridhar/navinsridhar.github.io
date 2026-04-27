@@ -31,6 +31,6 @@ I received my PhD in Astrophysics from **Columbia University** (2024), advised b
 was a BS-MS student majoring in Physics at the **Indian Institute of Science Education & Research (IISER)** at Bhopal, with research stints at Caltech, TIFR
 Mumbai, the University of Alberta, IIAp Bangalore, and ISRO Bangalore.
 
-Outside of research, I care deeply about **teaching, mentoring, and science
-outreach** — see the [teaching](/teaching/), [outreach](/outreach/), and
-[news](/news/) pages for more. Outside of academic activities, I enjoy rock climbing, scuba diving, and playing all kind of sports.
+Besides research, I care deeply about **teaching, mentoring, and science
+outreach** — see the [teaching](/teaching/) and [news](/news/) pages for
+more. Outside of academic activities, I enjoy rock climbing, scuba diving, and playing all kind of sports.

@@ -15,18 +15,6 @@ nav: false
 
 ---
 
-## Biography (at the time of PDP)
-
-Navin Sridhar was a PhD student in the Department of Astronomy at Columbia
-University, with research interests focused on plasma physics around black
-holes and neutron stars. His intent in attending PDP was not only to learn
-effective teaching methods, but also to learn how those skills could
-transfer effectively into the non-academic sector. He believes the skills
-developed as part of the PDP experience are a valuable asset for designing
-equitable, inquiry-driven courses and curricula.
-
----
-
 ## Teaching activity summary
 
 - **Activity:** _"To err is human — Measurement uncertainties and significant measurements"_
