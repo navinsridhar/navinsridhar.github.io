@@ -19,8 +19,12 @@ name: Sync CV from Overleaf
 
 on:
   schedule:
-    # 08:00 UTC every day (00:00 US Pacific in winter, 01:00 in summer)
-    - cron: "0 8 * * *"
+    # Every 6 hours (00:00, 06:00, 12:00, 18:00 UTC). Overleaf's git
+    # integration lags a few minutes behind the editor, and each website
+    # deploy piggy-backs on a sync-cv push, so the cheapest way to keep
+    # the site in sync with the latest Overleaf compile is to sample more
+    # often. If a run finds no change in CV.pdf it exits cheaply.
+    - cron: "0 */6 * * *"
   workflow_dispatch: # allow manual runs from the Actions tab
   push:
     paths:
@@ -120,6 +124,15 @@ jobs:
         run: |
           set -euo pipefail
           cd overleaf-cv
+
+          # Log the Overleaf commit we're compiling from. Useful when
+          # diagnosing "the CV on the site looks a version behind" — the
+          # short SHA and commit date here tell you exactly which Overleaf
+          # snapshot produced the CV.pdf that got pushed to the site.
+          echo "::group::Overleaf source commit"
+          git log -1 --pretty=format:'commit  %h%nauthor  %an <%ae>%ndate    %ai%nsubject %s' || true
+          echo
+          echo "::endgroup::"
 
           echo "::group::.tex files found at project root"
           ls -la *.tex 2>/dev/null || echo "(none)"
