@@ -44,6 +44,7 @@ jobs:
           fetch-depth: 0
 
       - name: Clone the Overleaf project
+        id: clone
         env:
           OVERLEAF_GIT_URL: ${{ secrets.OVERLEAF_GIT_URL }}
           OVERLEAF_GIT_TOKEN: ${{ secrets.OVERLEAF_GIT_TOKEN }}
@@ -57,9 +58,49 @@ jobs:
           AUTHED_URL="$(echo "${OVERLEAF_GIT_URL}" \
             | sed -E "s#https://#https://git:${OVERLEAF_GIT_TOKEN}@#")"
           rm -rf overleaf-cv
-          git clone --depth 1 "${AUTHED_URL}" overleaf-cv
+
+          # git.overleaf.com occasionally drops connections or returns a
+          # timeout (we've seen "Failed to connect to git.overleaf.com port
+          # 443 after ~135s"). Fail fast on a hung connection and retry a
+          # few times before giving up — a transient Overleaf hiccup should
+          # not fail the entire workflow.
+          #
+          #   GIT_HTTP_LOW_SPEED_LIMIT / _TIME abort the transfer if the
+          #   effective throughput drops below 1000 B/s for 30 s.
+          export GIT_HTTP_LOW_SPEED_LIMIT=1000
+          export GIT_HTTP_LOW_SPEED_TIME=30
+
+          MAX_ATTEMPTS=4
+          attempt=1
+          while [ "$attempt" -le "$MAX_ATTEMPTS" ]; do
+            echo "::group::Overleaf clone attempt ${attempt}/${MAX_ATTEMPTS}"
+            if git -c http.postBuffer=524288000 \
+                   clone --depth 1 "${AUTHED_URL}" overleaf-cv; then
+              echo "::endgroup::"
+              echo "clone_ok=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "::endgroup::"
+            rm -rf overleaf-cv
+            if [ "$attempt" -lt "$MAX_ATTEMPTS" ]; then
+              # Exponential-ish backoff: 15s, 30s, 60s.
+              sleep_s=$((15 * (2 ** (attempt - 1))))
+              echo "::warning::Overleaf clone failed — retrying in ${sleep_s}s."
+              sleep "$sleep_s"
+            fi
+            attempt=$((attempt + 1))
+          done
+
+          # All retries exhausted. Emit a warning and mark the step as a
+          # soft failure so downstream steps can skip cleanly, keeping the
+          # existing assets/pdf/CV.pdf in place until the next successful
+          # sync. This is preferable to a hard workflow failure that clogs
+          # the Actions inbox for transient Overleaf outages.
+          echo "::warning::Overleaf still unreachable after ${MAX_ATTEMPTS} attempts. Keeping the current CV.pdf and exiting cleanly."
+          echo "clone_ok=false" >> "$GITHUB_OUTPUT"
 
       - name: Install TeX Live
+        if: steps.clone.outputs.clone_ok == 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
@@ -73,6 +114,7 @@ jobs:
             latexmk
 
       - name: Compile the CV
+        if: steps.clone.outputs.clone_ok == 'true'
         env:
           MAIN_TEX_FILE: ${{ vars.MAIN_TEX_FILE || 'main.tex' }}
         run: |
@@ -108,6 +150,7 @@ jobs:
           ls -la ../assets/pdf/
 
       - name: Commit & push the updated PDF (if changed)
+        if: steps.clone.outputs.clone_ok == 'true'
         run: |
           set -euo pipefail
           git config user.name  "github-actions[bot]"
