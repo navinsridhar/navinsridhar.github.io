@@ -1,0 +1,148 @@
+name: Deploy CV PDF to website repo
+
+# --- WHERE THIS FILE GOES ---------------------------------------------------
+# This workflow belongs INSIDE the `navinsridhar/navin_cv` repository, at:
+#   .github/workflows/deploy-cv-to-site.yml
+#
+# It does not belong in `navinsridhar/navinsridhar.github.io`.
+#
+# --- WHAT IT DOES -----------------------------------------------------------
+# On every push to `main` (i.e. every time you click "Push Overleaf changes
+# to GitHub" in Overleaf, or however else the sync fires), this workflow:
+#
+#   1. Checks out this repo (`navin_cv`, containing the LaTeX source).
+#   2. Compiles `cv.tex` (or whichever main .tex you configure) into a PDF
+#      via TeX Live + latexmk.
+#   3. Checks out `navinsridhar/navinsridhar.github.io` (main branch) using
+#      a Personal Access Token stored as the `SITE_REPO_PAT` secret.
+#   4. Copies the compiled PDF into `assets/pdf/CV.pdf` on the website repo
+#      and pushes.
+#
+# The website's `deploy.yml` fires on that push and rebuilds the Jekyll
+# site, so the fresh CV appears on https://navinsridhar.github.io/cv/
+# within ~2 minutes of your Overleaf push, without any polling.
+#
+# --- ONE-TIME SETUP ---------------------------------------------------------
+# 1. Create a fine-grained Personal Access Token (PAT) at
+#    https://github.com/settings/personal-access-tokens/new
+#      Token name:              overleaf-cv → site
+#      Resource owner:          navinsridhar
+#      Repository access:       Only select repositories → navinsridhar.github.io
+#      Repository permissions:  Contents = Read and write
+#                               Metadata = Read (auto-added)
+#      Expiration:              (whatever you're comfortable with; 1 year is fine)
+# 2. In the `navin_cv` repo, go to
+#      Settings > Secrets and variables > Actions > New repository secret
+#    Name it exactly SITE_REPO_PAT and paste the token as the value.
+# 3. (Optional) If your top-level .tex file is not `cv.tex`, set a
+#    repository *variable* in `navin_cv`:
+#      Settings > Secrets and variables > Actions > Variables > New variable
+#      Name: MAIN_TEX_FILE
+#      Value: (e.g. main.tex, resume.tex …)
+# ---------------------------------------------------------------------------
+
+on:
+  push:
+    branches: [main, master]
+    # Only re-compile when source files actually changed (avoid triggering
+    # on branch-metadata churn).
+    paths:
+      - "**/*.tex"
+      - "**/*.bib"
+      - "**/*.cls"
+      - "**/*.sty"
+      - "**/*.bst"
+      - "figures/**"
+      - "images/**"
+      - "assets/**"
+      - ".github/workflows/deploy-cv-to-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-cv
+  cancel-in-progress: false
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out navin_cv (source)
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-bibtex-extra \
+            texlive-science \
+            biber \
+            latexmk
+
+      - name: Compile the CV
+        env:
+          MAIN_TEX_FILE: ${{ vars.MAIN_TEX_FILE || 'cv.tex' }}
+        run: |
+          set -euo pipefail
+          echo "::group::.tex files found at project root"
+          ls -la *.tex 2>/dev/null || echo "(none)"
+          echo "::endgroup::"
+
+          # Fall back to a single-.tex auto-detect if the configured
+          # MAIN_TEX_FILE isn't there.
+          if [ ! -f "${MAIN_TEX_FILE}" ]; then
+            echo "::warning::${MAIN_TEX_FILE} not found — attempting auto-detection."
+            TEX_COUNT=$(ls *.tex 2>/dev/null | wc -l | tr -d ' ')
+            if [ "${TEX_COUNT}" = "1" ]; then
+              MAIN_TEX_FILE="$(ls *.tex)"
+              echo "Auto-detected MAIN_TEX_FILE=${MAIN_TEX_FILE}"
+            else
+              echo "::error::Set the MAIN_TEX_FILE repo variable (Settings > Secrets and variables > Actions > Variables)."
+              exit 1
+            fi
+          fi
+
+          latexmk -pdf -interaction=nonstopmode -halt-on-error "${MAIN_TEX_FILE}"
+          OUT_PDF="${MAIN_TEX_FILE%.tex}.pdf"
+          if [ ! -f "${OUT_PDF}" ]; then
+            echo "::error::Expected output ${OUT_PDF} not produced by latexmk."
+            exit 1
+          fi
+          echo "OUT_PDF=${OUT_PDF}" >> "$GITHUB_ENV"
+
+      - name: Check out website repo (target)
+        uses: actions/checkout@v4
+        with:
+          repository: navinsridhar/navinsridhar.github.io
+          ref: main
+          token: ${{ secrets.SITE_REPO_PAT }}
+          path: site
+          fetch-depth: 0
+
+      - name: Copy PDF & push to website repo
+        run: |
+          set -euo pipefail
+          mkdir -p site/assets/pdf
+          cp "${OUT_PDF}" site/assets/pdf/CV.pdf
+          cd site
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/pdf/CV.pdf
+          if git diff --cached --quiet -- assets/pdf/CV.pdf; then
+            echo "No change in CV PDF — skipping commit."
+            exit 0
+          fi
+          # Annotate with the navin_cv source SHA so the safety-net poller
+          # over on the site repo can tell it doesn't need to redo work.
+          git commit -m "chore: sync CV from Overleaf (via navin_cv)" \
+                     -m "source-repo: navinsridhar/navin_cv" \
+                     -m "source-sha:  ${{ github.sha }}"
+          # Pull-rebase in case deploy.yml pushed while we were compiling.
+          git pull --rebase origin main
+          git push origin main
