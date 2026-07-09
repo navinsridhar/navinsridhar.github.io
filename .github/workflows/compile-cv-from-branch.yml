@@ -1,0 +1,30 @@
+# Workflow retired.
+#
+# Original intent was to compile the CV from a `overleaf-source` branch of
+# THIS repo. That plan assumed Overleaf's GitHub sync pointed at a branch
+# of navinsridhar.github.io — but in practice Overleaf is linked to a
+# SEPARATE repo, navinsridhar/navin_cv (see the "Sync with GitHub" dialog
+# in the Overleaf editor).
+#
+# The correct architecture is therefore:
+#
+#   Overleaf --push--> navinsridhar/navin_cv --workflow--> navinsridhar.github.io
+#
+# The workflow that does the compile + cross-repo push lives inside the
+# navin_cv repo, at:
+#
+#   navin_cv/.github/workflows/deploy-cv-to-site.yml
+#
+# That file was delivered to Navin outside the repo tree; a copy also lives
+# in this repo's docs/ folder as a reference.
+#
+# This file is kept as a placeholder (rather than deleted) so the git
+# history remains legible.
+name: (retired) compile-cv-from-branch
+on:
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This workflow is intentionally retired. See docs/deploy-cv-to-site.yml."
