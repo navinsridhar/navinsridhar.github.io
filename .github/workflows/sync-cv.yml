@@ -19,13 +19,21 @@ name: Sync CV from Overleaf
 
 on:
   schedule:
-    # Every 6 hours (00:00, 06:00, 12:00, 18:00 UTC). Overleaf's git
-    # integration lags a few minutes behind the editor, and each website
-    # deploy piggy-backs on a sync-cv push, so the cheapest way to keep
-    # the site in sync with the latest Overleaf compile is to sample more
-    # often. If a run finds no change in CV.pdf it exits cheaply.
-    - cron: "0 */6 * * *"
+    # Hourly safety-net poll. The primary trigger is the
+    # `repository_dispatch` below, fired from navin_cv on every Overleaf
+    # push — so in normal operation the site rebuilds within ~2 min of an
+    # Overleaf save. The cron is just insurance for the case where the
+    # dispatch fails or navin_cv's workflow gets disabled.
+    - cron: "0 * * * *"
   workflow_dispatch: # allow manual runs from the Actions tab
+  repository_dispatch:
+    # Fired by navin_cv's `deploy-cv-to-site.yml` after Overleaf pushes;
+    # the receiver here re-clones from git.overleaf.com (which reflects
+    # Overleaf's live editor state on every auto-save) and compiles from
+    # THAT — bypassing any lag introduced by Overleaf's "Push to GitHub"
+    # snapshotting. This is what fixes the "CV on site is one compile
+    # behind Overleaf" issue.
+    types: [sync-cv]
   push:
     paths:
       - ".github/workflows/sync-cv.yml"
