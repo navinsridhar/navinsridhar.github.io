@@ -13,10 +13,10 @@ The best thing about doing a PhD in astrophysics is how much of it is _making
 things intelligible_ — to yourself, to collaborators, to referees, to
 students, to the public. I have come to see **teaching and research as complementary crafts**, and I try to bring the same discipline to both: ask a question
 that matters, be honest about what you actually know, and design the next
-step so the learner (or the calculation, or the simulation) can actually
+step so the learner can actually
 succeed at it.
 
-Three commitments shape how I run a classroom, a research group, or a
+Three commitments shape how I run a classroom, or a
 one-on-one mentorship.
 
 ### 1 · Inquiry before content.
@@ -37,11 +37,11 @@ The single biggest thing I took from all of this is that _the learner has to do
 the thinking, and my role is to enable it._ A lecture that hands students a finished result trains them
 to recognise that result; a well-designed inquiry trains them to build the
 next one themselves. This is what I mean by **student-driven learning**:
-the student, not the instructor, owns the question, sets the pace, and
+the student, not the instructor, owns the question, and
 decides which dead ends are worth chasing — while I provide the
 scaffolding, the prompts, and the honest feedback that keep the
 exploration productive. When I teach concepts in physics, I spend as much time
-designing what students will _do_ as what I will _say_. Concretely: I begin
+designing what students will _do_ as what I will _say_. Concretely: I will begin
 each session with a short visible roadmap of the day's goals; I open with a
 provocation rather than a definition; and, before students attempt a new
 calculation, we work a parallel example together so they enter the activity
@@ -53,7 +53,7 @@ Inclusive teaching, to me, is not a tone — it is a set of structural
 choices that determine who can actually participate in a classroom or a
 research project. Following ICDS, I treat _universal design for learning_ as the default rather than as accommodation: I provide the same
 content in multiple modalities (a visual diagram, a verbal walkthrough, a
-written handout), I distribute slides and notes ahead of time so students
+written handout). One example is distribute slides and notes ahead of time so students
 who process best by reading don't have to keep up in real time. I make
 office hours and asynchronous Q&A for students who can't comfortably ask in front of their peers.
 
@@ -79,9 +79,7 @@ correct before any high-stakes deliverable.
 
 ### 3 · Teach the transferable skill, not the curriculum item.
 
-The deliverable of a class is not an exam, and the deliverable of a
-research project is not a paper — both are the **habits of mind** the
-student walks away with. Across very different settings (an undergraduate
+Across very different settings (an undergraduate
 Astronomy labs, course lectures, outreach lectures, high-school mentoring at
 Harlem Democracy Prep High School, or one-on-one PhD-track research mentoring),
 I try to optimise for these handful of skills that compound over a
@@ -108,9 +106,6 @@ career:
 
 ## Selected Teaching Experience
 
-**At Stanford University (KIPAC / Physics)**
-
-- Mentor: Ningyue Fan, PhD student (Fall 2025–)
 
 **At Columbia University**
 
@@ -147,6 +142,5 @@ Total: **9 students**
 
 ---
 
-_If you are a student interested in working with me on black-hole accretion,
-FRBs, relativistic plasma physics, or multi-messenger astrophysics, please feel
+_If you are a student interested in working with me on high-energy/multi-messenger astrophysics or relativistic plasma physics, please feel
 free to [email me](mailto:nsridhar@stanford.edu) with your CV, and a statement._
