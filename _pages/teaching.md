@@ -106,7 +106,6 @@ career:
 
 ## Selected Teaching Experience
 
-
 **At Columbia University**
 
 - **Head Teaching Assistant**, Department of Astronomy (2020–2021)
